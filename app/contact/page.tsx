@@ -230,9 +230,6 @@ export default function ContactPage() {
                         <Button type="submit" size="lg" className="w-full bg-accent hover:bg-accent/90">
                           Request Free Assessment
                         </Button>
-                        <p className="text-xs text-muted-foreground mt-3 text-center">
-                          We only take 5 clients per quarter. We reject 60% of projects. If the ROI isn&apos;t clear, we won&apos;t waste your time.
-                        </p>
                       </div>
                     </form>
                   </CardContent>
