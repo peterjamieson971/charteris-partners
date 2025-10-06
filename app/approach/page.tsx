@@ -2,6 +2,7 @@ import { Check, AlertCircle } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import Image from "next/image";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -13,13 +14,21 @@ export default function ApproachPage() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section className="bg-gradient-to-b from-primary/5 to-background py-20">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="relative bg-gradient-to-br from-primary via-primary to-blue-900 text-white py-24 overflow-hidden">
+        <div className="absolute inset-0 opacity-10">
+          <Image
+            src="/images/shutterstock_2633905119.jpg"
+            alt="Our Approach"
+            fill
+            className="object-cover"
+          />
+        </div>
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold text-primary mb-6">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6">
               No Gimmicks. No Games. Just Value.
             </h1>
-            <p className="text-xl text-muted-foreground">
+            <p className="text-xl text-gray-200">
               We Build AI Solutions That Actually Work
             </p>
           </div>

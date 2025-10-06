@@ -8,54 +8,59 @@ export default function Home() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-b from-primary/5 to-background py-20 md:py-28">
-        {/* Background Image */}
-        <div className="absolute inset-0 z-0">
+      <section className="relative bg-gradient-to-br from-primary via-primary to-blue-900 text-white py-24 overflow-hidden">
+        <div className="absolute inset-0 opacity-10">
           <Image
             src="/images/shutterstock_2499055659.jpg"
             alt="AI Technology Background"
             fill
-            className="object-cover opacity-5"
+            className="object-cover"
             priority
           />
         </div>
 
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-primary mb-6">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
               Your Competitors Are Using AI.
               <br />
-              <span className="text-foreground">Their Consultants Aren&apos;t Building It.</span>
+              <span className="text-gray-100">Their Consultants Aren&apos;t Building It.</span>
               <br />
-              <span className="text-secondary">We Are.</span>
+              <span className="text-accent">We Are.</span>
             </h1>
-            <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
+            <p className="text-lg md:text-xl text-gray-200 mb-8 max-w-3xl mx-auto">
               We build and deploy working AI solutions in 30 days. Not PowerPoints. Not proposals. Real software that cuts costs by 30%, creates new revenue streams, and stays with you forever.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" asChild className="bg-accent hover:bg-accent/90 text-accent-foreground">
-                <Link href="/contact">Get Free AI Assessment</Link>
-              </Button>
-              <Button size="lg" variant="outline" asChild>
-                <Link href="/services">See Our Services</Link>
-              </Button>
+              <Link
+                href="/contact"
+                className="inline-block bg-accent hover:bg-accent/90 text-white font-medium px-8 py-4 rounded-lg transition-all"
+              >
+                Get Free AI Assessment
+              </Link>
+              <Link
+                href="/services"
+                className="inline-block bg-white/10 hover:bg-white/20 backdrop-blur-sm text-white font-medium px-8 py-4 rounded-lg transition-all"
+              >
+                See Our Services
+              </Link>
             </div>
 
             {/* Trust Bar */}
             <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
-              <div className="flex items-center justify-center gap-2 text-muted-foreground">
+              <div className="flex items-center justify-center gap-2 text-gray-200">
                 <Check className="h-5 w-5 text-accent" />
                 <span>15+ Years Building AI</span>
               </div>
-              <div className="flex items-center justify-center gap-2 text-muted-foreground">
+              <div className="flex items-center justify-center gap-2 text-gray-200">
                 <Check className="h-5 w-5 text-accent" />
                 <span>Enterprise Experience</span>
               </div>
-              <div className="flex items-center justify-center gap-2 text-muted-foreground">
+              <div className="flex items-center justify-center gap-2 text-gray-200">
                 <Check className="h-5 w-5 text-accent" />
                 <span>30-Day Delivery</span>
               </div>
-              <div className="flex items-center justify-center gap-2 text-muted-foreground">
+              <div className="flex items-center justify-center gap-2 text-gray-200">
                 <Check className="h-5 w-5 text-accent" />
                 <span>You Own Everything</span>
               </div>

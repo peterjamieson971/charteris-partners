@@ -89,13 +89,21 @@ export default function ServicesPage() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section className="bg-gradient-to-b from-primary/5 to-background py-20">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="relative bg-gradient-to-br from-primary via-primary to-blue-900 text-white py-24 overflow-hidden">
+        <div className="absolute inset-0 opacity-10">
+          <Image
+            src="/images/shutterstock_2678609641.jpg"
+            alt="AI Services"
+            fill
+            className="object-cover"
+          />
+        </div>
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold text-primary mb-6">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6">
               AI Services That Actually Deliver
             </h1>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+            <p className="text-xl text-gray-200 max-w-3xl mx-auto">
               We&apos;re not management consultants. We&apos;re AI builders who deliver working solutions, not PowerPoints. Every engagement produces software you own, outcomes you can measure, and capabilities that stay with you forever.
             </p>
           </div>

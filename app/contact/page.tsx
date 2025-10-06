@@ -7,6 +7,7 @@ import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Mail, Phone, Clock } from "lucide-react";
 import { useState } from "react";
+import Image from "next/image";
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -37,13 +38,21 @@ export default function ContactPage() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section className="bg-gradient-to-b from-primary/5 to-background py-20">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="relative bg-gradient-to-br from-primary via-primary to-blue-900 text-white py-24 overflow-hidden">
+        <div className="absolute inset-0 opacity-10">
+          <Image
+            src="/images/shutterstock_2602830653.jpg"
+            alt="Contact Us"
+            fill
+            className="object-cover"
+          />
+        </div>
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold text-primary mb-6">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6">
               Let&apos;s Build Something Great Together
             </h1>
-            <p className="text-xl text-muted-foreground">
+            <p className="text-xl text-gray-200">
               Free AI Opportunity Assessment - 2 Hours, No Cost, Real Value
             </p>
           </div>

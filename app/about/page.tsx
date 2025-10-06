@@ -14,21 +14,21 @@ export default function AboutPage() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-b from-primary/5 to-background py-20">
-        <div className="absolute inset-0 z-0">
+      <section className="relative bg-gradient-to-br from-primary via-primary to-blue-900 text-white py-24 overflow-hidden">
+        <div className="absolute inset-0 opacity-10">
           <Image
             src="/images/shutterstock_2430517031.jpg"
             alt="Professional Team"
             fill
-            className="object-cover opacity-5"
+            className="object-cover"
           />
         </div>
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold text-primary mb-6">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6">
               Business Technologists Who Build
             </h1>
-            <p className="text-xl text-muted-foreground">
+            <p className="text-xl text-gray-200">
               We&apos;re Not Consultants. We&apos;re Business Technologists.
             </p>
           </div>
@@ -56,21 +56,21 @@ export default function AboutPage() {
                 After 15+ years building AI systems in enterprise environments, we kept seeing the same pattern:
               </p>
               <ul className="space-y-3 mb-6">
-                <li className="flex items-start gap-2 text-foreground">
-                  <span className="text-destructive mt-1.5">•</span>
-                  <span>Companies spending millions on AI strategies they never implement</span>
+                <li className="flex items-start gap-3">
+                  <Check className="h-5 w-5 text-destructive mt-0.5 flex-shrink-0" />
+                  <span className="text-foreground">Companies spending millions on AI strategies they never implement</span>
                 </li>
-                <li className="flex items-start gap-2 text-foreground">
-                  <span className="text-destructive mt-1.5">•</span>
-                  <span>Technical teams building brilliant solutions to the wrong problems</span>
+                <li className="flex items-start gap-3">
+                  <Check className="h-5 w-5 text-destructive mt-0.5 flex-shrink-0" />
+                  <span className="text-foreground">Technical teams building brilliant solutions to the wrong problems</span>
                 </li>
-                <li className="flex items-start gap-2 text-foreground">
-                  <span className="text-destructive mt-1.5">•</span>
-                  <span>Business leaders buying magic beans from vendors</span>
+                <li className="flex items-start gap-3">
+                  <Check className="h-5 w-5 text-destructive mt-0.5 flex-shrink-0" />
+                  <span className="text-foreground">Business leaders buying magic beans from vendors</span>
                 </li>
-                <li className="flex items-start gap-2 text-foreground">
-                  <span className="text-destructive mt-1.5">•</span>
-                  <span>The gap between PowerPoint and production growing wider</span>
+                <li className="flex items-start gap-3">
+                  <Check className="h-5 w-5 text-destructive mt-0.5 flex-shrink-0" />
+                  <span className="text-foreground">The gap between PowerPoint and production growing wider</span>
                 </li>
               </ul>
               <p className="text-lg text-foreground">

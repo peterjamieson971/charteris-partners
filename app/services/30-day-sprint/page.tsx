@@ -14,36 +14,42 @@ export default function ThirtyDaySprintPage() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-b from-primary/5 to-background py-20">
-        <div className="absolute inset-0 z-0">
+      <section className="relative bg-gradient-to-br from-primary via-primary to-blue-900 text-white py-24 overflow-hidden">
+        <div className="absolute inset-0 opacity-10">
           <Image
-            src="/images/shutterstock_2678609641.jpg"
+            src="/images/services/30-day-sprint.jpg"
             alt="Fast AI Development"
             fill
-            className="object-cover opacity-5"
+            className="object-cover"
           />
         </div>
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="max-w-4xl mx-auto">
-            <div className="inline-block bg-accent/10 text-accent px-4 py-2 rounded-full text-sm font-semibold mb-6">
+          <div className="max-w-4xl">
+            <div className="inline-block bg-accent/20 text-accent px-4 py-2 rounded-full text-sm font-semibold mb-6">
               Most Popular Service
             </div>
-            <h1 className="text-4xl md:text-5xl font-bold text-primary mb-6">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
               30-Day AI Sprint
             </h1>
-            <p className="text-2xl text-foreground mb-4">
+            <p className="text-xl md:text-2xl mb-6 text-gray-200">
               From Idea to Working Solution in 4 Weeks
             </p>
-            <p className="text-lg text-muted-foreground mb-8">
+            <p className="text-lg md:text-xl mb-8 text-gray-300">
               Build and deploy production-ready AI in 30 days flat. No proof-of-concept paralysis. No endless pilots. Real solutions delivering real ROI.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Button size="lg" asChild className="bg-accent hover:bg-accent/90">
-                <Link href="/contact">Start Your Sprint</Link>
-              </Button>
-              <Button size="lg" variant="outline" asChild>
-                <Link href="/approach">See Our Process</Link>
-              </Button>
+            <div className="flex flex-wrap gap-4">
+              <Link
+                href="/contact"
+                className="inline-block bg-accent hover:bg-accent/90 text-white font-medium px-8 py-4 rounded-lg transition-all"
+              >
+                Start Your Sprint
+              </Link>
+              <Link
+                href="/approach"
+                className="inline-block bg-white/10 hover:bg-white/20 backdrop-blur-sm text-white font-medium px-8 py-4 rounded-lg transition-all"
+              >
+                See Our Process
+              </Link>
             </div>
           </div>
         </div>
