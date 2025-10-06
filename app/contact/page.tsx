@@ -17,15 +17,53 @@ export default function ContactPage() {
     role: "",
     challenge: "",
     timeline: "",
+    website: "", // Honeypot field
   });
 
   const [submitted, setSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // In production, this would send to an API endpoint
-    console.log("Form submitted:", formData);
-    setSubmitted(true);
+    setIsSubmitting(true);
+    setError(null);
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        if (response.status === 429) {
+          setError('You have submitted too many requests. Please try again in an hour.');
+        } else {
+          setError(data.error || 'Something went wrong. Please try again.');
+        }
+        setIsSubmitting(false);
+        return;
+      }
+
+      setSubmitted(true);
+      setFormData({
+        name: "",
+        email: "",
+        company: "",
+        role: "",
+        challenge: "",
+        timeline: "",
+        website: "",
+      });
+    } catch (err) {
+      setError('Failed to send message. Please try again or email us directly.');
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -143,7 +181,22 @@ export default function ContactPage() {
                     </CardDescription>
                   </CardHeader>
                   <CardContent>
+                    {error && (
+                      <div className="mb-4 p-4 bg-red-50 border border-red-200 rounded-lg text-red-800 text-sm">
+                        {error}
+                      </div>
+                    )}
                     <form onSubmit={handleSubmit} className="space-y-6">
+                      {/* Honeypot field - hidden from users */}
+                      <input
+                        type="text"
+                        name="website"
+                        value={formData.website}
+                        onChange={handleChange}
+                        style={{ position: 'absolute', left: '-9999px' }}
+                        tabIndex={-1}
+                        autoComplete="off"
+                      />
                       <div className="grid md:grid-cols-2 gap-4">
                         <div className="space-y-2">
                           <Label htmlFor="name">Full Name *</Label>
@@ -227,8 +280,13 @@ export default function ContactPage() {
                       </div>
 
                       <div className="pt-4">
-                        <Button type="submit" size="lg" className="w-full bg-accent hover:bg-accent/90">
-                          Request Free Assessment
+                        <Button
+                          type="submit"
+                          size="lg"
+                          className="w-full bg-accent hover:bg-accent/90"
+                          disabled={isSubmitting}
+                        >
+                          {isSubmitting ? 'Sending...' : 'Request Free Assessment'}
                         </Button>
                       </div>
                     </form>
