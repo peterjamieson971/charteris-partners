@@ -122,10 +122,11 @@ export default function ServicesPage() {
                     <CardHeader>
                       <div className="flex items-start justify-between mb-4">
                         <Icon className="h-12 w-12 text-accent" />
-                        <Link href={service.href}>
-                          <Button variant="ghost" size="sm" className="text-secondary hover:text-secondary/80">
-                            Learn More <ArrowRight className="ml-1 h-4 w-4" />
-                          </Button>
+                        <Link
+                          href={service.href}
+                          className="inline-flex items-center text-sm font-medium text-accent hover:text-accent/80 transition-colors"
+                        >
+                          Learn More <ArrowRight className="ml-1 h-4 w-4" />
                         </Link>
                       </div>
                       <CardTitle className="text-2xl mb-2">{service.title}</CardTitle>

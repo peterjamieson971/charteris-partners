@@ -227,11 +227,12 @@ export default function Home() {
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <Button variant="link" asChild className="p-0 h-auto text-secondary">
-                  <Link href="/services/enterprise-ai-strategy">
-                    Learn More <ArrowRight className="ml-1 h-4 w-4" />
-                  </Link>
-                </Button>
+                <Link
+                  href="/services/enterprise-ai-strategy"
+                  className="inline-flex items-center text-accent hover:text-accent/80 font-medium transition-colors"
+                >
+                  Learn More <ArrowRight className="ml-1 h-4 w-4" />
+                </Link>
               </CardContent>
             </Card>
 
@@ -243,11 +244,12 @@ export default function Home() {
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <Button variant="link" asChild className="p-0 h-auto text-secondary">
-                  <Link href="/services/executive-ai-training">
-                    Learn More <ArrowRight className="ml-1 h-4 w-4" />
-                  </Link>
-                </Button>
+                <Link
+                  href="/services/executive-ai-training"
+                  className="inline-flex items-center text-accent hover:text-accent/80 font-medium transition-colors"
+                >
+                  Learn More <ArrowRight className="ml-1 h-4 w-4" />
+                </Link>
               </CardContent>
             </Card>
 
@@ -259,11 +261,12 @@ export default function Home() {
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <Button variant="link" asChild className="p-0 h-auto text-secondary">
-                  <Link href="/services/30-day-sprint">
-                    Learn More <ArrowRight className="ml-1 h-4 w-4" />
-                  </Link>
-                </Button>
+                <Link
+                  href="/services/30-day-sprint"
+                  className="inline-flex items-center text-accent hover:text-accent/80 font-medium transition-colors"
+                >
+                  Learn More <ArrowRight className="ml-1 h-4 w-4" />
+                </Link>
               </CardContent>
             </Card>
 
@@ -275,11 +278,12 @@ export default function Home() {
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <Button variant="link" asChild className="p-0 h-auto text-secondary">
-                  <Link href="/services/operations-transformation">
-                    Learn More <ArrowRight className="ml-1 h-4 w-4" />
-                  </Link>
-                </Button>
+                <Link
+                  href="/services/operations-transformation"
+                  className="inline-flex items-center text-accent hover:text-accent/80 font-medium transition-colors"
+                >
+                  Learn More <ArrowRight className="ml-1 h-4 w-4" />
+                </Link>
               </CardContent>
             </Card>
 
@@ -291,11 +295,12 @@ export default function Home() {
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <Button variant="link" asChild className="p-0 h-auto text-secondary">
-                  <Link href="/services/revenue-intelligence">
-                    Learn More <ArrowRight className="ml-1 h-4 w-4" />
-                  </Link>
-                </Button>
+                <Link
+                  href="/services/revenue-intelligence"
+                  className="inline-flex items-center text-accent hover:text-accent/80 font-medium transition-colors"
+                >
+                  Learn More <ArrowRight className="ml-1 h-4 w-4" />
+                </Link>
               </CardContent>
             </Card>
 
@@ -307,11 +312,12 @@ export default function Home() {
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <Button variant="link" asChild className="p-0 h-auto text-secondary">
-                  <Link href="/services/ai-applications">
-                    Learn More <ArrowRight className="ml-1 h-4 w-4" />
-                  </Link>
-                </Button>
+                <Link
+                  href="/services/ai-applications"
+                  className="inline-flex items-center text-accent hover:text-accent/80 font-medium transition-colors"
+                >
+                  Learn More <ArrowRight className="ml-1 h-4 w-4" />
+                </Link>
               </CardContent>
             </Card>
 
@@ -323,11 +329,12 @@ export default function Home() {
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <Button variant="link" asChild className="p-0 h-auto text-secondary">
-                  <Link href="/services/ai-rescue">
-                    Learn More <ArrowRight className="ml-1 h-4 w-4" />
-                  </Link>
-                </Button>
+                <Link
+                  href="/services/ai-rescue"
+                  className="inline-flex items-center text-accent hover:text-accent/80 font-medium transition-colors"
+                >
+                  Learn More <ArrowRight className="ml-1 h-4 w-4" />
+                </Link>
               </CardContent>
             </Card>
 
@@ -339,11 +346,12 @@ export default function Home() {
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <Button variant="link" asChild className="p-0 h-auto text-secondary">
-                  <Link href="/services/team-enablement">
-                    Learn More <ArrowRight className="ml-1 h-4 w-4" />
-                  </Link>
-                </Button>
+                <Link
+                  href="/services/team-enablement"
+                  className="inline-flex items-center text-accent hover:text-accent/80 font-medium transition-colors"
+                >
+                  Learn More <ArrowRight className="ml-1 h-4 w-4" />
+                </Link>
               </CardContent>
             </Card>
           </div>
