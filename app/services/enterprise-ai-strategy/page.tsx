@@ -251,7 +251,7 @@ export default function EnterpriseAIStrategyPage() {
               </Link>
             </div>
             <p className="mt-8 text-primary-foreground/80">
-              <strong>We only take 5 clients per quarter.</strong> If this isn&apos;t right for you, we&apos;ll tell you immediately and suggest the right approach.
+              If this isn&apos;t right for you, we&apos;ll tell you immediately and suggest the right approach.
             </p>
           </div>
         </div>

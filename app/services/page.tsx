@@ -186,7 +186,7 @@ export default function ServicesPage() {
                   <CardTitle>Honest Assessment</CardTitle>
                 </CardHeader>
                 <CardContent className="text-muted-foreground">
-                  We reject 60% of projects. If the ROI isn&apos;t clear or AI isn&apos;t the answer, we&apos;ll tell you immediately.
+                  If the ROI isn&apos;t clear or AI isn&apos;t the answer, we&apos;ll tell you immediately.
                 </CardContent>
               </Card>
             </div>

@@ -337,7 +337,7 @@ export default function ThirtyDaySprintPage() {
                   </Button>
                 </div>
                 <p className="text-sm text-center text-muted-foreground pt-4 border-t">
-                  <strong>We only take 5 clients per quarter.</strong> If your project isn&apos;t a good fit for a 30-day sprint, we&apos;ll tell you immediately and suggest the right approach.
+                  If your project isn&apos;t a good fit for a 30-day sprint, we&apos;ll tell you immediately and suggest the right approach.
                 </p>
               </CardContent>
             </Card>
