@@ -66,7 +66,7 @@ export default function ApproachPage() {
                     <ul className="space-y-2 text-muted-foreground">
                       <li className="flex items-start gap-2">
                         <Check className="h-5 w-5 text-accent mt-0.5 flex-shrink-0" />
-                        <span>2-hour working session (not a sales pitch)</span>
+                        <span>90-minute working session (not a sales pitch)</span>
                       </li>
                       <li className="flex items-start gap-2">
                         <Check className="h-5 w-5 text-accent mt-0.5 flex-shrink-0" />

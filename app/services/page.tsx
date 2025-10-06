@@ -26,7 +26,7 @@ const services = [
     longDescription: "Transform your C-suite and board from AI-curious to AI-confident with practical, business-focused training.",
     icon: GraduationCap,
     href: "/services/executive-ai-training",
-    timeline: "2 hours - 2 days",
+    timeline: "90 minutes - 2 days",
     outcome: "Leadership confident in AI decisions",
   },
   {

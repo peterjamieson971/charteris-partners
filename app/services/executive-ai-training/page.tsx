@@ -60,7 +60,7 @@ export default function ExecutiveAITrainingPage() {
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
             <div className="bg-white p-6 rounded-lg border-2 border-gray-200 hover:border-accent transition-colors">
-              <div className="text-accent font-bold text-sm mb-2">2 HOURS</div>
+              <div className="text-accent font-bold text-sm mb-2">90 MINUTES</div>
               <h3 className="font-bold text-xl mb-3">Board Presentation</h3>
               <p className="text-gray-600">AI literacy for board oversight and governance decisions</p>
             </div>

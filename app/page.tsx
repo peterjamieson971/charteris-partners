@@ -8,8 +8,8 @@ export default function Home() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-primary via-primary to-blue-900 text-white py-16 md:py-24 overflow-hidden">
-        <div className="absolute inset-0 opacity-10">
+      <section className="relative bg-primary text-white py-20 md:py-32 overflow-hidden">
+        <div className="absolute inset-0 opacity-50">
           <Image
             src="/images/shutterstock_2499055659.jpg"
             alt="AI Technology Background"
@@ -18,18 +18,15 @@ export default function Home() {
             priority
           />
         </div>
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/70 via-primary/60 to-blue-900/70"></div>
 
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-4 md:mb-6">
-              Your Competitors Are Using AI.
-              <br />
-              <span className="text-gray-100">Their Consultants Aren&apos;t Building It.</span>
-              <br />
-              <span className="text-accent">We Are.</span>
+          <div className="max-w-5xl mx-auto text-center">
+            <h1 className="text-3xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6 md:mb-8 leading-tight">
+              <span className="block text-white">AI Advisors Who Actually Implement.</span>
             </h1>
-            <p className="text-base md:text-xl text-gray-200 mb-6 md:mb-8 max-w-3xl mx-auto">
-              We build and deploy working AI solutions in 30 days. Not PowerPoints. Not proposals. Real software that cuts costs by 30%, creates new revenue streams, and stays with you forever.
+            <p className="text-lg md:text-2xl text-white/90 mb-8 md:mb-10 max-w-4xl mx-auto leading-relaxed">
+              We don&apos;t just recommend—we deliver. Strategy, software, implementation, and support. From boardroom vision to operational reality, we transform your business with AI solutions that drive measurable ROI.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
@@ -80,35 +77,35 @@ export default function Home() {
               <strong>You&apos;re not alone.</strong> 70% of enterprise AI projects fail because consultants strategize, vendors overcomplicate, and no one actually builds.
             </p>
             <div className="mt-12 grid md:grid-cols-2 gap-6">
-              <Card>
+              <Card className="border-l-4 border-l-destructive">
                 <CardHeader>
-                  <CardTitle className="text-destructive">Meanwhile:</CardTitle>
+                  <CardTitle className="text-primary text-xl">Meanwhile:</CardTitle>
                 </CardHeader>
-                <CardContent className="space-y-3">
-                  <p className="flex items-start gap-2">
-                    <span className="text-destructive mt-1">•</span>
-                    <span>Your costs keep rising while margins shrink</span>
-                  </p>
-                  <p className="flex items-start gap-2">
-                    <span className="text-destructive mt-1">•</span>
-                    <span>Competitors move faster with AI-powered operations</span>
-                  </p>
-                  <p className="flex items-start gap-2">
-                    <span className="text-destructive mt-1">•</span>
-                    <span>Your team drowns in work machines should do</span>
-                  </p>
-                  <p className="flex items-start gap-2">
-                    <span className="text-destructive mt-1">•</span>
-                    <span>That expensive AI pilot is still just a pilot</span>
-                  </p>
+                <CardContent className="space-y-4">
+                  <div className="flex items-start gap-3">
+                    <span className="text-primary font-bold text-lg">•</span>
+                    <span className="text-foreground">Your costs keep rising while margins shrink</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <span className="text-primary font-bold text-lg">•</span>
+                    <span className="text-foreground">Competitors move faster with AI-powered operations</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <span className="text-primary font-bold text-lg">•</span>
+                    <span className="text-foreground">Your team drowns in work machines should do</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <span className="text-primary font-bold text-lg">•</span>
+                    <span className="text-foreground">That expensive AI pilot is still just a pilot</span>
+                  </div>
                 </CardContent>
               </Card>
-              <Card className="bg-primary text-primary-foreground">
+              <Card className="bg-primary text-primary-foreground border-l-4 border-l-accent">
                 <CardHeader>
-                  <CardTitle>We Build AI That Works. In 30 Days.</CardTitle>
+                  <CardTitle className="text-xl">We Build AI That Works. In 30 Days.</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="mb-4">
+                  <p className="text-primary-foreground/90">
                     No discovery phases. No transformation theatre. Just builders who deliver working solutions you own completely.
                   </p>
                 </CardContent>
@@ -148,11 +145,11 @@ export default function Home() {
               <Card>
                 <CardHeader>
                   <Users className="h-10 w-10 text-accent mb-2" />
-                  <CardTitle>Your Team, Your System</CardTitle>
+                  <CardTitle>Your System, Your Choice</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground">
-                    We build WITH you, not for you. When we leave, you own everything and can run it yourself.
+                    We build solutions you own completely—source code, documentation, infrastructure access. Have a technical team? We&apos;ll train them. Need ongoing support? We&apos;re here. Want to bring in someone else? No problem. You&apos;re never trapped.
                   </p>
                 </CardContent>
               </Card>
@@ -358,38 +355,34 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Why Trust Us Section */}
+      {/* Why Choose Us Section */}
       <section className="py-12 md:py-20 bg-primary text-primary-foreground">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center">
-              New Company. Experienced Builders.
+            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">
+              Why Choose Charteris Partners:
             </h2>
-            <p className="text-lg mb-4 text-primary-foreground/90">
-              <strong>We&apos;re new because AI done right is new.</strong> Our team has spent 15+ years building AI systems at leading companies, deploying 100+ production systems, and watching millions get wasted on consultancy theater.
-            </p>
-            <div className="mt-8 space-y-4">
-              <p className="text-lg font-semibold">We started Charteris Partners because:</p>
-              <ul className="space-y-3 text-primary-foreground/90">
-                <li className="flex items-start gap-2">
+            <div className="space-y-4">
+              <ul className="space-y-4 text-lg text-primary-foreground/90">
+                <li className="flex items-start gap-3">
                   <Check className="h-6 w-6 text-accent mt-0.5 flex-shrink-0" />
-                  <span>We&apos;ve seen what works (and what doesn&apos;t)</span>
+                  <span>Application expertise meets AI innovation—we build, not just consult</span>
                 </li>
-                <li className="flex items-start gap-2">
+                <li className="flex items-start gap-3">
                   <Check className="h-6 w-6 text-accent mt-0.5 flex-shrink-0" />
-                  <span>We&apos;re tired of companies getting PowerPoints instead of products</span>
+                  <span>Production experience at scale—we know what works beyond the demo</span>
                 </li>
-                <li className="flex items-start gap-2">
+                <li className="flex items-start gap-3">
                   <Check className="h-6 w-6 text-accent mt-0.5 flex-shrink-0" />
-                  <span>We believe AI implementation shouldn&apos;t take 18 months</span>
+                  <span>Business outcomes first—ROI matters more than technology trends</span>
                 </li>
-                <li className="flex items-start gap-2">
+                <li className="flex items-start gap-3">
                   <Check className="h-6 w-6 text-accent mt-0.5 flex-shrink-0" />
-                  <span>We know building beats strategizing every time</span>
+                  <span>Full-stack capability—strategy through implementation and support</span>
                 </li>
               </ul>
               <p className="text-lg font-semibold mt-8 pt-8 border-t border-primary-foreground/20">
-                Our Promise: Judge us on our first sprint. If we can&apos;t deliver value in 30 days, you pay nothing.
+                Our Commitment: Every engagement delivers working software and measurable value. You&apos;ll see progress in weeks, not quarters.
               </p>
             </div>
           </div>
@@ -404,29 +397,48 @@ export default function Home() {
               Your Competitors Aren&apos;t Waiting.
             </h2>
             <p className="text-lg text-muted-foreground mb-12">
-              In the time it takes McKinsey to deliver a strategy deck, we&apos;ll have built, deployed, and proven ROI on your first AI system.
+              In 90 minutes, we&apos;ll show you exactly where AI can transform your business—and how to make it happen.
             </p>
 
             <Card className="max-w-2xl mx-auto">
               <CardHeader>
-                <CardTitle className="text-2xl">Free AI Opportunity Assessment</CardTitle>
+                <CardTitle className="text-2xl">Complimentary AI Opportunity Assessment</CardTitle>
                 <CardDescription className="text-base">
-                  2 hours. No cost. Real value.
+                  90 minutes. No cost. Real strategic value.
                 </CardDescription>
               </CardHeader>
               <CardContent className="space-y-6">
-                <p className="text-left text-muted-foreground">
-                  We&apos;ll identify your highest-impact AI opportunity, show exactly how we&apos;d build it, and give you a fixed price and timeline. No obligation.
+                <div className="text-left">
+                  <p className="font-semibold text-foreground mb-4">What you&apos;ll get:</p>
+                  <ul className="space-y-3 text-muted-foreground">
+                    <li className="flex items-start gap-2">
+                      <Check className="h-5 w-5 text-accent mt-0.5 flex-shrink-0" />
+                      <span>Analysis of your highest-impact AI opportunities</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <Check className="h-5 w-5 text-accent mt-0.5 flex-shrink-0" />
+                      <span>Technical approach and implementation roadmap</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <Check className="h-5 w-5 text-accent mt-0.5 flex-shrink-0" />
+                      <span>Fixed pricing and realistic timeline</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <Check className="h-5 w-5 text-accent mt-0.5 flex-shrink-0" />
+                      <span>Clear ROI projections</span>
+                    </li>
+                  </ul>
+                </div>
+                <p className="text-sm text-muted-foreground text-center">
+                  No sales pitch. No obligation. Just actionable intelligence you can use to make informed decisions.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button size="lg" asChild className="bg-accent hover:bg-accent/90">
-                    <Link href="/contact">Book Your Assessment</Link>
+                    <Link href="/contact">Book Your 90-Minute Assessment</Link>
                   </Button>
                 </div>
-                <p className="text-sm text-muted-foreground pt-4 border-t">
-                  <strong>We only take 5 clients per quarter. We reject 60% of projects.</strong>
-                  <br />
-                  If the ROI isn&apos;t clear, we won&apos;t waste your time.
+                <p className="text-sm text-muted-foreground pt-4 border-t text-center">
+                  We&apos;re honest about fit. If AI isn&apos;t your best investment right now, we&apos;ll tell you—and suggest what might work better.
                 </p>
               </CardContent>
             </Card>

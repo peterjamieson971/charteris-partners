@@ -53,7 +53,7 @@ export default function ContactPage() {
               Let&apos;s Build Something Great Together
             </h1>
             <p className="text-xl text-gray-200">
-              Free AI Opportunity Assessment - 2 Hours, No Cost, Real Value
+              Free AI Opportunity Assessment - 90 Minutes, No Cost, Real Value
             </p>
           </div>
         </div>
@@ -68,7 +68,7 @@ export default function ContactPage() {
               <div>
                 <h2 className="text-2xl font-bold text-primary mb-4">Get In Touch</h2>
                 <p className="text-muted-foreground mb-6">
-                  In just 2 hours, we&apos;ll identify your highest-impact AI opportunity, show exactly how we&apos;d build it, and give you a fixed price and timeline.
+                  In just 90 minutes, we&apos;ll identify your highest-impact AI opportunity, show exactly how we&apos;d build it, and give you a fixed price and timeline.
                 </p>
                 <p className="text-foreground font-semibold">
                   No commitment. No sales pressure. Just honest assessment.
@@ -111,7 +111,7 @@ export default function ContactPage() {
                 </CardHeader>
                 <CardContent className="space-y-2 text-sm">
                   <p>1. We&apos;ll review your challenge within 24 hours</p>
-                  <p>2. Schedule a 2-hour working session (not a sales pitch)</p>
+                  <p>2. Schedule a 90-minute working session (not a sales pitch)</p>
                   <p>3. Provide a detailed solution proposal with fixed pricing</p>
                   <p>4. Give you a clear go/no-go recommendation</p>
                 </CardContent>
