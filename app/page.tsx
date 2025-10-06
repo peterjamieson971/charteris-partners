@@ -197,7 +197,7 @@ export default function Home() {
               <div className="relative">
                 <div className="relative h-[400px] rounded-lg overflow-hidden shadow-2xl">
                   <Image
-                    src="/images/shutterstock_2642134339.jpg"
+                    src="/images/shutterstock_2509003051.jpg"
                     alt="AI Technology and Data Analytics"
                     fill
                     className="object-cover"
