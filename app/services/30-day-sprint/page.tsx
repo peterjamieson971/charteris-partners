@@ -44,12 +44,6 @@ export default function ThirtyDaySprintPage() {
               >
                 Start Your Sprint
               </Link>
-              <Link
-                href="/approach"
-                className="inline-block bg-white/10 hover:bg-white/20 backdrop-blur-sm text-white font-medium px-8 py-4 rounded-lg transition-all"
-              >
-                See Our Process
-              </Link>
             </div>
           </div>
         </div>

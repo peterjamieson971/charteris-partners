@@ -41,12 +41,6 @@ export default function ExecutiveAITrainingPage() {
               >
                 Book Executive Training
               </Link>
-              <Link
-                href="/approach"
-                className="inline-block bg-white/10 hover:bg-white/20 backdrop-blur-sm text-white font-medium px-8 py-4 rounded-lg transition-all"
-              >
-                See Our Approach
-              </Link>
             </div>
           </div>
         </div>
