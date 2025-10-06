@@ -219,14 +219,14 @@ export default function Home() {
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">How We Can Help</h2>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
-            <Card className="hover:shadow-lg transition-shadow">
-              <CardHeader>
-                <CardTitle className="text-lg">Enterprise AI Strategy System™</CardTitle>
-                <CardDescription>
+            <Card className="hover:shadow-lg transition-shadow h-full flex flex-col">
+              <CardHeader className="flex-1">
+                <CardTitle className="text-lg mb-3">Enterprise AI Strategy System™</CardTitle>
+                <CardDescription className="text-sm">
                   Replace millions in consulting spend with 100+ AI strategists working 24/7
                 </CardDescription>
               </CardHeader>
-              <CardContent>
+              <CardContent className="pt-0">
                 <Link
                   href="/services/enterprise-ai-strategy"
                   className="inline-flex items-center text-accent hover:text-accent/80 font-medium transition-colors"
@@ -236,14 +236,14 @@ export default function Home() {
               </CardContent>
             </Card>
 
-            <Card className="hover:shadow-lg transition-shadow">
-              <CardHeader>
-                <CardTitle className="text-lg">Executive AI Training</CardTitle>
-                <CardDescription>
+            <Card className="hover:shadow-lg transition-shadow h-full flex flex-col">
+              <CardHeader className="flex-1">
+                <CardTitle className="text-lg mb-3">Executive AI Training</CardTitle>
+                <CardDescription className="text-sm">
                   Transform leadership from AI-curious to AI-confident with practical training
                 </CardDescription>
               </CardHeader>
-              <CardContent>
+              <CardContent className="pt-0">
                 <Link
                   href="/services/executive-ai-training"
                   className="inline-flex items-center text-accent hover:text-accent/80 font-medium transition-colors"
@@ -253,14 +253,14 @@ export default function Home() {
               </CardContent>
             </Card>
 
-            <Card className="hover:shadow-lg transition-shadow">
-              <CardHeader>
-                <CardTitle className="text-lg">30-Day AI Sprint</CardTitle>
-                <CardDescription>
+            <Card className="hover:shadow-lg transition-shadow h-full flex flex-col">
+              <CardHeader className="flex-1">
+                <CardTitle className="text-lg mb-3">30-Day AI Sprint</CardTitle>
+                <CardDescription className="text-sm">
                   From idea to production in 4 weeks flat. Guaranteed.
                 </CardDescription>
               </CardHeader>
-              <CardContent>
+              <CardContent className="pt-0">
                 <Link
                   href="/services/30-day-sprint"
                   className="inline-flex items-center text-accent hover:text-accent/80 font-medium transition-colors"
@@ -270,14 +270,14 @@ export default function Home() {
               </CardContent>
             </Card>
 
-            <Card className="hover:shadow-lg transition-shadow">
-              <CardHeader>
-                <CardTitle className="text-lg">Operations AI Transformation</CardTitle>
-                <CardDescription>
+            <Card className="hover:shadow-lg transition-shadow h-full flex flex-col">
+              <CardHeader className="flex-1">
+                <CardTitle className="text-lg mb-3">Operations AI Transformation</CardTitle>
+                <CardDescription className="text-sm">
                   Cut costs by 30% without cutting people. Pay from the savings.
                 </CardDescription>
               </CardHeader>
-              <CardContent>
+              <CardContent className="pt-0">
                 <Link
                   href="/services/operations-transformation"
                   className="inline-flex items-center text-accent hover:text-accent/80 font-medium transition-colors"
@@ -287,14 +287,14 @@ export default function Home() {
               </CardContent>
             </Card>
 
-            <Card className="hover:shadow-lg transition-shadow">
-              <CardHeader>
-                <CardTitle className="text-lg">Revenue Intelligence Platform</CardTitle>
-                <CardDescription>
+            <Card className="hover:shadow-lg transition-shadow h-full flex flex-col">
+              <CardHeader className="flex-1">
+                <CardTitle className="text-lg mb-3">Revenue Intelligence Platform</CardTitle>
+                <CardDescription className="text-sm">
                   Turn your data into products customers pay for. New revenue in 90 days.
                 </CardDescription>
               </CardHeader>
-              <CardContent>
+              <CardContent className="pt-0">
                 <Link
                   href="/services/revenue-intelligence"
                   className="inline-flex items-center text-accent hover:text-accent/80 font-medium transition-colors"
@@ -304,14 +304,14 @@ export default function Home() {
               </CardContent>
             </Card>
 
-            <Card className="hover:shadow-lg transition-shadow">
-              <CardHeader>
-                <CardTitle className="text-lg">AI Applications Suite</CardTitle>
-                <CardDescription>
+            <Card className="hover:shadow-lg transition-shadow h-full flex flex-col">
+              <CardHeader className="flex-1">
+                <CardTitle className="text-lg mb-3">AI Applications Suite</CardTitle>
+                <CardDescription className="text-sm">
                   Deploy proven AI applications like AI Receptionists that work from day one.
                 </CardDescription>
               </CardHeader>
-              <CardContent>
+              <CardContent className="pt-0">
                 <Link
                   href="/services/ai-applications"
                   className="inline-flex items-center text-accent hover:text-accent/80 font-medium transition-colors"
@@ -321,14 +321,14 @@ export default function Home() {
               </CardContent>
             </Card>
 
-            <Card className="hover:shadow-lg transition-shadow">
-              <CardHeader>
-                <CardTitle className="text-lg">AI Rescue Service</CardTitle>
-                <CardDescription>
+            <Card className="hover:shadow-lg transition-shadow h-full flex flex-col">
+              <CardHeader className="flex-1">
+                <CardTitle className="text-lg mb-3">AI Rescue Service</CardTitle>
+                <CardDescription className="text-sm">
                   Fix your failed AI project in 6 weeks or we&apos;ll tell you to kill it.
                 </CardDescription>
               </CardHeader>
-              <CardContent>
+              <CardContent className="pt-0">
                 <Link
                   href="/services/ai-rescue"
                   className="inline-flex items-center text-accent hover:text-accent/80 font-medium transition-colors"
@@ -338,14 +338,14 @@ export default function Home() {
               </CardContent>
             </Card>
 
-            <Card className="hover:shadow-lg transition-shadow">
-              <CardHeader>
-                <CardTitle className="text-lg">Team AI Enablement</CardTitle>
-                <CardDescription>
+            <Card className="hover:shadow-lg transition-shadow h-full flex flex-col">
+              <CardHeader className="flex-1">
+                <CardTitle className="text-lg mb-3">Team AI Enablement</CardTitle>
+                <CardDescription className="text-sm">
                   Transform your team into AI builders. Stop paying contractors premium rates.
                 </CardDescription>
               </CardHeader>
-              <CardContent>
+              <CardContent className="pt-0">
                 <Link
                   href="/services/team-enablement"
                   className="inline-flex items-center text-accent hover:text-accent/80 font-medium transition-colors"

@@ -118,13 +118,13 @@ export default function ServicesPage() {
               {services.map((service) => {
                 const Icon = service.icon;
                 return (
-                  <Card key={service.href} className="hover:shadow-xl transition-all border-2 hover:border-accent/50">
-                    <CardHeader>
+                  <Card key={service.href} className="hover:shadow-xl transition-all border-2 hover:border-accent/50 h-full flex flex-col">
+                    <CardHeader className="flex-none">
                       <div className="flex items-start justify-between mb-4">
-                        <Icon className="h-12 w-12 text-accent" />
+                        <Icon className="h-12 w-12 text-accent flex-shrink-0" />
                         <Link
                           href={service.href}
-                          className="inline-flex items-center text-sm font-medium text-accent hover:text-accent/80 transition-colors"
+                          className="inline-flex items-center text-sm font-medium text-accent hover:text-accent/80 transition-colors flex-shrink-0"
                         >
                           Learn More <ArrowRight className="ml-1 h-4 w-4" />
                         </Link>
@@ -134,11 +134,11 @@ export default function ServicesPage() {
                         {service.description}
                       </CardDescription>
                     </CardHeader>
-                    <CardContent className="space-y-4">
-                      <p className="text-muted-foreground">
+                    <CardContent className="flex-1 flex flex-col">
+                      <p className="text-muted-foreground mb-4 flex-1">
                         {service.longDescription}
                       </p>
-                      <div className="pt-4 border-t space-y-2">
+                      <div className="pt-4 border-t space-y-2 mt-auto">
                         <div className="flex justify-between text-sm">
                           <span className="text-muted-foreground">Timeline:</span>
                           <span className="font-semibold text-foreground">{service.timeline}</span>
