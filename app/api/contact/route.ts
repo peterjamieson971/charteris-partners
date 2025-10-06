@@ -113,7 +113,7 @@ export async function POST(request: NextRequest) {
 
     // Send email to Charteris Partners (NOT to the user)
     const { data, error } = await resend.emails.send({
-      from: 'Charteris Partners Contact Form <onboarding@resend.dev>', // Update this with your verified domain
+      from: 'Charteris Partners Contact Form <charteris@qstore24.com>',
       to: ['hello@charterispartners.com'],
       subject: `New Contact Form Submission from ${sanitizedData.name}`,
       html: `
