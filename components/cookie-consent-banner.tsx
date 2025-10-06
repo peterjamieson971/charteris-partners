@@ -38,10 +38,10 @@ export function CookieConsentBanner() {
     <div className="fixed bottom-0 left-0 right-0 z-50 p-2 pointer-events-none">
       <div className="max-w-5xl mx-auto pointer-events-auto">
         <Card className="border border-primary shadow-lg">
-          <CardContent className="p-3 space-y-2">
+          <CardContent className="p-4">
             {!showDetails ? (
-              <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
-                <p className="text-xs text-muted-foreground">
+              <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+                <p className="text-sm text-muted-foreground">
                   We use cookies to improve your experience.{" "}
                   <button
                     onClick={() => setShowDetails(true)}
@@ -53,14 +53,14 @@ export function CookieConsentBanner() {
                 <div className="flex gap-2 flex-shrink-0">
                   <Button
                     onClick={handleAcceptAll}
-                    className="bg-accent hover:bg-accent/90 h-8 px-3 text-xs"
+                    className="bg-accent hover:bg-accent/90 h-9 px-4 text-sm"
                   >
                     Accept All
                   </Button>
                   <Button
                     onClick={handleAcceptNecessary}
                     variant="outline"
-                    className="h-8 px-3 text-xs"
+                    className="h-9 px-4 text-sm"
                   >
                     Necessary Only
                   </Button>
@@ -89,21 +89,21 @@ export function CookieConsentBanner() {
                   <div className="flex gap-2">
                     <Button
                       onClick={handleAcceptAll}
-                      className="bg-accent hover:bg-accent/90 h-8 px-3 text-xs"
+                      className="bg-accent hover:bg-accent/90 h-9 px-4 text-sm"
                     >
                       Accept All
                     </Button>
                     <Button
                       onClick={handleAcceptNecessary}
                       variant="outline"
-                      className="h-8 px-3 text-xs"
+                      className="h-9 px-4 text-sm"
                     >
                       Necessary Only
                     </Button>
                     <Button
                       onClick={() => setShowDetails(false)}
                       variant="ghost"
-                      className="h-8 px-3 text-xs"
+                      className="h-9 px-4 text-sm"
                     >
                       Back
                     </Button>
