@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Check, DollarSign, TrendingUp, Package, ArrowRight } from "lucide-react";
+import { DollarSign, TrendingUp, Package, ArrowRight } from "lucide-react";
 
 export const metadata = {
   title: "Revenue Intelligence Platform | Turn Data Into Revenue | Charteris Partners",
@@ -56,13 +56,13 @@ export default function RevenueIntelligencePage() {
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl md:text-4xl font-bold text-primary mb-12 text-center">
-            The Revenue Opportunity You're Missing
+            The Revenue Opportunity You&apos;re Missing
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
             <div className="bg-white p-6 rounded-lg text-center">
               <DollarSign className="w-12 h-12 text-accent mx-auto mb-4" />
               <h3 className="font-bold mb-2">Valuable Data</h3>
-              <p className="text-gray-600 text-sm">Sitting on data you're not monetizing</p>
+              <p className="text-gray-600 text-sm">Sitting on data you&apos;re not monetizing</p>
             </div>
             <div className="bg-white p-6 rounded-lg text-center">
               <TrendingUp className="w-12 h-12 text-accent mx-auto mb-4" />
@@ -206,7 +206,7 @@ export default function RevenueIntelligencePage() {
               Ready to Create New Revenue Streams?
             </h2>
             <p className="text-xl text-primary-foreground/90 mb-8">
-              Let's identify the revenue hiding in your data and build products customers will pay for.
+              Let&apos;s identify the revenue hiding in your data and build products customers will pay for.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link

@@ -61,7 +61,7 @@ export default function EnterpriseAIStrategyPage() {
           <div className="max-w-4xl mx-auto">
             <div className="grid md:grid-cols-2 gap-8">
               <div className="bg-white p-8 rounded-lg border-l-4 border-red-500">
-                <h3 className="font-bold text-xl mb-4 text-red-600">You're Facing:</h3>
+                <h3 className="font-bold text-xl mb-4 text-red-600">You&apos;re Facing:</h3>
                 <ul className="space-y-3 text-gray-700">
                   <li className="flex items-start">
                     <X className="w-5 h-5 text-red-500 mr-3 mt-0.5 flex-shrink-0" />
@@ -126,7 +126,7 @@ export default function EnterpriseAIStrategyPage() {
             <div className="bg-gradient-to-br from-accent to-green-700 text-white p-8 rounded-lg">
               <h3 className="text-2xl font-bold mb-4">Automated Consulting Frameworks</h3>
               <p className="text-gray-200">
-                Porter's Five Forces, BCG Matrix, McKinsey 7S - all analyzing your business continuously, not just quarterly.
+                Porter&apos;s Five Forces, BCG Matrix, McKinsey 7S - all analyzing your business continuously, not just quarterly.
               </p>
             </div>
             <div className="bg-gradient-to-br from-blue-600 to-blue-800 text-white p-8 rounded-lg">
@@ -233,7 +233,7 @@ export default function EnterpriseAIStrategyPage() {
               Ready to Replace Consulting Spend With Permanent Capability?
             </h2>
             <p className="text-xl text-primary-foreground/90 mb-8">
-              Let's discuss how an AI strategy team can transform your decision-making and eliminate consulting dependency.
+              Let&apos;s discuss how an AI strategy team can transform your decision-making and eliminate consulting dependency.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
@@ -251,7 +251,7 @@ export default function EnterpriseAIStrategyPage() {
               </Link>
             </div>
             <p className="mt-8 text-primary-foreground/80">
-              <strong>We only take 5 clients per quarter.</strong> If this isn't right for you, we'll tell you immediately and suggest the right approach.
+              <strong>We only take 5 clients per quarter.</strong> If this isn&apos;t right for you, we&apos;ll tell you immediately and suggest the right approach.
             </p>
           </div>
         </div>

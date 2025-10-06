@@ -61,7 +61,7 @@ export default function TeamEnablementPage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
             <div className="bg-white p-6 rounded-lg text-center">
               <Users className="w-12 h-12 text-red-500 mx-auto mb-4" />
-              <h3 className="font-bold mb-2">Can't Hire</h3>
+              <h3 className="font-bold mb-2">Can&apos;t Hire</h3>
               <p className="text-gray-600 text-sm">AI talent at competitive salaries is impossible to find</p>
             </div>
             <div className="bg-white p-6 rounded-lg text-center">
@@ -320,7 +320,7 @@ export default function TeamEnablementPage() {
               Ready to Build Permanent AI Capability?
             </h2>
             <p className="text-xl text-primary-foreground/90 mb-8">
-              Let's discuss how we can transform your team into AI builders who deliver independently.
+              Let&apos;s discuss how we can transform your team into AI builders who deliver independently.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link

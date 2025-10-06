@@ -169,7 +169,7 @@ export default function AIApplicationsPage() {
             <div className="bg-white p-8 rounded-lg border border-gray-200 hover:border-accent transition-colors">
               <Brain className="w-12 h-12 text-accent mb-4" />
               <h3 className="font-bold text-xl mb-4">Knowledge Assistant</h3>
-              <p className="text-gray-600 mb-4">Your team's AI-powered second brain</p>
+              <p className="text-gray-600 mb-4">Your team&apos;s AI-powered second brain</p>
               <ul className="space-y-2 text-sm text-gray-600">
                 <li className="flex items-start">
                   <Check className="w-4 h-4 text-accent mr-2 mt-0.5 flex-shrink-0" />
@@ -255,7 +255,7 @@ export default function AIApplicationsPage() {
               Ready to Deploy AI That Works From Day One?
             </h2>
             <p className="text-xl text-primary-foreground/90 mb-8">
-              Let's discuss which AI applications can deliver immediate value to your business.
+              Let&apos;s discuss which AI applications can deliver immediate value to your business.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link

@@ -111,7 +111,7 @@ export default function InsightsPage() {
             See Yourself in These Stories?
           </h2>
           <p className="text-xl text-primary-foreground/90 mb-8 max-w-2xl mx-auto">
-            Every problem we write about is one we've solved. Let's discuss how we can solve yours.
+            Every problem we write about is one we&apos;ve solved. Let&apos;s discuss how we can solve yours.
           </p>
           <Link
             href="/contact"

@@ -302,7 +302,7 @@ export default function ThirtyDaySprintPage() {
                   <CardTitle className="text-muted-foreground">Not Ideal</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-2 text-sm text-muted-foreground">
-                  <p>• Vague "AI transformation" goals</p>
+                  <p>• Vague &ldquo;AI transformation&rdquo; goals</p>
                   <p>• No urgency or clear deadline</p>
                   <p>• Multiple competing priorities</p>
                   <p>• No data to work with</p>

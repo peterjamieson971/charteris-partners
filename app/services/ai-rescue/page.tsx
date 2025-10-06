@@ -32,7 +32,7 @@ export default function AIRescuePage() {
               Fix Your Failed AI Project in 6 Weeks
             </p>
             <p className="text-lg md:text-xl mb-8 text-gray-300">
-              Stop throwing good money after bad - we'll fix it or kill it fast. Honest assessment and rapid rebuild if viable.
+              Stop throwing good money after bad - we&apos;ll fix it or kill it fast. Honest assessment and rapid rebuild if viable.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link
@@ -67,7 +67,7 @@ export default function AIRescuePage() {
             <div className="bg-white p-6 rounded-lg border-l-4 border-red-500">
               <AlertTriangle className="w-10 h-10 text-red-500 mb-3" />
               <h3 className="font-bold mb-2">Pilot Paralysis</h3>
-              <p className="text-gray-600 text-sm">AI pilot worked but won't scale to production</p>
+              <p className="text-gray-600 text-sm">AI pilot worked but won&apos;t scale to production</p>
             </div>
             <div className="bg-white p-6 rounded-lg border-l-4 border-red-500">
               <AlertTriangle className="w-10 h-10 text-red-500 mb-3" />
@@ -136,7 +136,7 @@ export default function AIRescuePage() {
                     <X className="w-6 h-6 text-red-500 mr-3 mt-0.5 flex-shrink-0" />
                     <div>
                       <div className="font-bold mb-2">If Not Viable:</div>
-                      <p className="text-sm text-gray-600">We document why it won't work and suggest alternatives</p>
+                      <p className="text-sm text-gray-600">We document why it won&apos;t work and suggest alternatives</p>
                     </div>
                   </div>
                 </div>
@@ -148,7 +148,7 @@ export default function AIRescuePage() {
                 <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center font-bold text-xl mr-6 flex-shrink-0">2</div>
                 <div>
                   <h3 className="text-2xl font-bold mb-4">Weeks 2-6: Rapid Rebuild (if viable)</h3>
-                  <p className="text-gray-200 mb-4">Complete reconstruction with improved architecture and your team's involvement</p>
+                  <p className="text-gray-200 mb-4">Complete reconstruction with improved architecture and your team&apos;s involvement</p>
                   <ul className="space-y-2 text-sm">
                     <li className="flex items-start">
                       <Check className="w-5 h-5 mr-2 mt-0.5 flex-shrink-0" />
@@ -247,7 +247,7 @@ export default function AIRescuePage() {
               Stop Wasting Money on a Failed AI Project
             </h2>
             <p className="text-xl text-primary-foreground/90 mb-8">
-              Get an honest assessment. We'll tell you if it can be fixed or if you should cut your losses.
+              Get an honest assessment. We&apos;ll tell you if it can be fixed or if you should cut your losses.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
@@ -265,7 +265,7 @@ export default function AIRescuePage() {
               </Link>
             </div>
             <p className="mt-8 text-primary-foreground/80">
-              <strong>Honest guarantee:</strong> If we can't fix it in 6 weeks, we'll tell you to kill it and document why.
+              <strong>Honest guarantee:</strong> If we can&apos;t fix it in 6 weeks, we&apos;ll tell you to kill it and document why.
             </p>
           </div>
         </div>

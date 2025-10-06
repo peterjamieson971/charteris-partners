@@ -266,7 +266,7 @@ export default function OperationsTransformationPage() {
               Ready to Cut Costs Without Cutting People?
             </h2>
             <p className="text-xl text-primary-foreground/90 mb-8">
-              Let's identify your highest-impact automation opportunities and build a performance-based engagement.
+              Let&apos;s identify your highest-impact automation opportunities and build a performance-based engagement.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link

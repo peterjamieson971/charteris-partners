@@ -98,7 +98,7 @@ export default function ExecutiveAITrainingPage() {
                   <Check className="w-6 h-6 text-accent mr-3 mt-0.5 flex-shrink-0" />
                   <div>
                     <div className="font-semibold">AI Strategy Workshop</div>
-                    <div className="text-gray-600 text-sm">Half-day intensive on AI's real business impact</div>
+                    <div className="text-gray-600 text-sm">Half-day intensive on AI&apos;s real business impact</div>
                   </div>
                 </li>
                 <li className="flex items-start">
@@ -218,7 +218,7 @@ export default function ExecutiveAITrainingPage() {
               Ready to Make Your Leadership AI-Confident?
             </h2>
             <p className="text-xl text-primary-foreground/90 mb-8">
-              Let's discuss the right training format for your executive team and board.
+              Let&apos;s discuss the right training format for your executive team and board.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
