@@ -71,8 +71,54 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Charteris Partners",
+    "description": "Business Technologists who build AI solutions in 30 days, not PowerPoints",
+    "url": "https://charteris-partners.vercel.app",
+    "logo": "https://charteris-partners.vercel.app/images/Transparent_Navy_Blue__1_.png",
+    "image": "https://charteris-partners.vercel.app/images/Transparent_Navy_Blue_with_tagline.png",
+    "priceRange": "$$$$",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "US"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "email": "hello@charterispartners.com",
+      "contactType": "Customer Service"
+    },
+    "areaServed": {
+      "@type": "Country",
+      "name": "United States"
+    },
+    "serviceType": [
+      "AI Consulting",
+      "AI Implementation",
+      "AI Strategy",
+      "Enterprise AI Solutions",
+      "Machine Learning",
+      "AI Development"
+    ],
+    "knowsAbout": [
+      "Artificial Intelligence",
+      "Machine Learning",
+      "AI Strategy",
+      "Enterprise AI",
+      "AI Implementation"
+    ]
+  };
+
   return (
     <html lang="en">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+      </head>
       <body className={`${inter.variable} font-sans antialiased`}>
         <Navigation />
         <Breadcrumbs />

@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-primary via-primary to-blue-900 text-white py-24 overflow-hidden">
+      <section className="relative bg-gradient-to-br from-primary via-primary to-blue-900 text-white py-16 md:py-24 overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <Image
             src="/images/shutterstock_2499055659.jpg"
@@ -21,14 +21,14 @@ export default function Home() {
 
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
+            <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-4 md:mb-6">
               Your Competitors Are Using AI.
               <br />
               <span className="text-gray-100">Their Consultants Aren&apos;t Building It.</span>
               <br />
               <span className="text-accent">We Are.</span>
             </h1>
-            <p className="text-lg md:text-xl text-gray-200 mb-8 max-w-3xl mx-auto">
+            <p className="text-base md:text-xl text-gray-200 mb-6 md:mb-8 max-w-3xl mx-auto">
               We build and deploy working AI solutions in 30 days. Not PowerPoints. Not proposals. Real software that cuts costs by 30%, creates new revenue streams, and stays with you forever.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -70,7 +70,7 @@ export default function Home() {
       </section>
 
       {/* Problem Section */}
-      <section className="py-20 bg-background">
+      <section className="py-12 md:py-20 bg-background">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6 text-center">
@@ -119,7 +119,7 @@ export default function Home() {
       </section>
 
       {/* Solution Section */}
-      <section className="py-20 bg-muted/30">
+      <section className="py-12 md:py-20 bg-muted/30">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-5xl mx-auto">
             <div className="grid md:grid-cols-3 gap-8">
@@ -162,7 +162,7 @@ export default function Home() {
       </section>
 
       {/* Visual Impact Section */}
-      <section className="py-20 bg-background">
+      <section className="py-12 md:py-20 bg-background">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-6xl mx-auto">
             <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -213,7 +213,7 @@ export default function Home() {
       </section>
 
       {/* Services Grid */}
-      <section className="py-20 bg-background">
+      <section className="py-12 md:py-20 bg-background">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">How We Can Help</h2>
@@ -359,7 +359,7 @@ export default function Home() {
       </section>
 
       {/* Why Trust Us Section */}
-      <section className="py-20 bg-primary text-primary-foreground">
+      <section className="py-12 md:py-20 bg-primary text-primary-foreground">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center">
@@ -397,7 +397,7 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-b from-background to-muted/30">
+      <section className="py-12 md:py-20 bg-gradient-to-b from-background to-muted/30">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6">

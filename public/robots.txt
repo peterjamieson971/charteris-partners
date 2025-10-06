@@ -1,0 +1,11 @@
+# robots.txt for Charteris Partners
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://charteris-partners.vercel.app/sitemap.xml
+
+# Disallow admin and api routes
+Disallow: /api/
+Disallow: /_next/
+Disallow: /admin/

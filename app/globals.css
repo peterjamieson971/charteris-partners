@@ -123,3 +123,24 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Mobile optimizations */
+@layer utilities {
+  @media (max-width: 768px) {
+    .mobile-compact {
+      @apply py-12;
+    }
+
+    .mobile-text-sm {
+      @apply text-sm leading-relaxed;
+    }
+
+    .mobile-heading-sm {
+      @apply text-2xl;
+    }
+
+    .mobile-card-compact {
+      @apply p-4;
+    }
+  }
+}
