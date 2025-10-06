@@ -42,7 +42,8 @@ export function CookieConsentBanner() {
             {!showDetails ? (
               <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
                 <p className="text-sm text-muted-foreground">
-                  We use cookies to improve your experience.{" "}
+                  We use necessary cookies to make our site work. We&apos;d also like to set optional cookies to help us improve our website.
+                  These cookies won&apos;t be set unless you choose to enable them.{" "}
                   <button
                     onClick={() => setShowDetails(true)}
                     className="text-accent hover:underline font-medium"
