@@ -73,10 +73,104 @@ export default function PrivacyPage() {
               </ul>
             </section>
 
-            <section className="mb-8">
-              <h2 className="text-2xl font-bold text-primary mb-4">6. Contact Us</h2>
+            <section className="mb-8" id="cookies">
+              <h2 className="text-2xl font-bold text-primary mb-4">6. Cookie Policy</h2>
+              <p className="text-foreground mb-4">
+                We use cookies and similar tracking technologies to enhance your browsing experience, analyze site traffic, and understand where our visitors are coming from.
+              </p>
+
+              <h3 className="text-xl font-semibold text-primary mb-3 mt-6">What Are Cookies?</h3>
+              <p className="text-foreground mb-4">
+                Cookies are small text files that are placed on your device when you visit our website. They help us provide you with a better experience and allow certain features to function properly.
+              </p>
+
+              <h3 className="text-xl font-semibold text-primary mb-3 mt-6">Types of Cookies We Use</h3>
+
+              <div className="space-y-4 ml-4">
+                <div className="border-l-4 border-l-accent pl-4">
+                  <h4 className="font-semibold text-foreground mb-2">Necessary Cookies (Always Active)</h4>
+                  <p className="text-foreground mb-2">
+                    These cookies are essential for the website to function and cannot be disabled. They include:
+                  </p>
+                  <ul className="list-disc list-inside space-y-1 text-foreground ml-4">
+                    <li>Session management</li>
+                    <li>Security features</li>
+                    <li>Cookie consent preferences</li>
+                  </ul>
+                </div>
+
+                <div className="border-l-4 border-l-gray-300 pl-4">
+                  <h4 className="font-semibold text-foreground mb-2">Analytics Cookies (Optional)</h4>
+                  <p className="text-foreground mb-2">
+                    These cookies help us understand how visitors interact with our website. We may use:
+                  </p>
+                  <ul className="list-disc list-inside space-y-1 text-foreground ml-4">
+                    <li>Google Analytics for website usage statistics</li>
+                    <li>Performance monitoring tools</li>
+                    <li>Heatmaps to improve user experience</li>
+                  </ul>
+                  <p className="text-foreground mt-2 text-sm">
+                    All analytics data is collected anonymously and aggregated.
+                  </p>
+                </div>
+
+                <div className="border-l-4 border-l-gray-300 pl-4">
+                  <h4 className="font-semibold text-foreground mb-2">Marketing Cookies (Optional)</h4>
+                  <p className="text-foreground mb-2">
+                    These cookies track your browsing habits to deliver targeted advertising. We may use:
+                  </p>
+                  <ul className="list-disc list-inside space-y-1 text-foreground ml-4">
+                    <li>Social media pixels (LinkedIn, Facebook)</li>
+                    <li>Advertising networks</li>
+                    <li>Remarketing and retargeting services</li>
+                  </ul>
+                </div>
+              </div>
+
+              <h3 className="text-xl font-semibold text-primary mb-3 mt-6">Managing Your Cookie Preferences</h3>
+              <p className="text-foreground mb-4">
+                You can manage your cookie preferences at any time by visiting our{" "}
+                <a href="/cookie-preferences" className="text-accent hover:underline font-medium">
+                  Cookie Preferences page
+                </a>
+                . You can also control cookies through your browser settings.
+              </p>
+
+              <p className="text-foreground mb-4">
+                Please note that disabling certain cookies may impact the functionality of our website.
+              </p>
+
+              <h3 className="text-xl font-semibold text-primary mb-3 mt-6">Third-Party Cookies</h3>
               <p className="text-foreground">
-                If you have questions about this Privacy Policy, please contact us at{" "}
+                We may use third-party services that set their own cookies. These services include analytics providers, advertising networks, and social media platforms. We do not control these cookies, and you should refer to the third party&apos;s privacy policies for more information.
+              </p>
+            </section>
+
+            <section className="mb-8">
+              <h2 className="text-2xl font-bold text-primary mb-4">7. International Data Transfers</h2>
+              <p className="text-foreground">
+                Your information may be transferred to and maintained on servers located outside of your country. We ensure appropriate safeguards are in place to protect your data in accordance with applicable data protection laws.
+              </p>
+            </section>
+
+            <section className="mb-8">
+              <h2 className="text-2xl font-bold text-primary mb-4">8. Data Retention</h2>
+              <p className="text-foreground">
+                We retain your personal information only for as long as necessary to fulfill the purposes outlined in this Privacy Policy, unless a longer retention period is required by law.
+              </p>
+            </section>
+
+            <section className="mb-8">
+              <h2 className="text-2xl font-bold text-primary mb-4">9. Changes to This Policy</h2>
+              <p className="text-foreground">
+                We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new policy on this page and updating the &ldquo;Last Updated&rdquo; date.
+              </p>
+            </section>
+
+            <section className="mb-8">
+              <h2 className="text-2xl font-bold text-primary mb-4">10. Contact Us</h2>
+              <p className="text-foreground">
+                If you have questions about this Privacy Policy or our data practices, please contact us at{" "}
                 <a href="mailto:hello@charterispartners.com" className="text-accent hover:underline">
                   hello@charterispartners.com
                 </a>
