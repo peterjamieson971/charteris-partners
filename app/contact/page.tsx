@@ -5,7 +5,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
-import { Mail, Phone, Clock } from "lucide-react";
+import { Mail, Clock } from "lucide-react";
 import { useState } from "react";
 import Image from "next/image";
 
@@ -120,16 +120,6 @@ export default function ContactPage() {
                     <p className="font-semibold text-foreground">Email</p>
                     <a href="mailto:hello@charterispartners.com" className="text-secondary hover:underline">
                       hello@charterispartners.com
-                    </a>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-3">
-                  <Phone className="h-6 w-6 text-accent mt-1" />
-                  <div>
-                    <p className="font-semibold text-foreground">Phone</p>
-                    <a href="tel:+1234567890" className="text-secondary hover:underline">
-                      +1 (234) 567-890
                     </a>
                   </div>
                 </div>
