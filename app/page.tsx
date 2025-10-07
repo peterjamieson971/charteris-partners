@@ -115,12 +115,12 @@ export default function Home() {
                   </div>
                 </CardContent>
               </Card>
-              <Card className="bg-primary text-primary-foreground border-l-4 border-l-accent">
+              <Card className="bg-accent/10 border-l-4 border-l-accent">
                 <CardHeader>
                   <CardTitle className="text-xl">We Build AI That Works. In 30 Days.</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-primary-foreground/90">
+                  <p className="text-gray-700">
                     No discovery phases. No transformation theatre. Just builders who deliver working solutions you own completely.
                   </p>
                 </CardContent>
