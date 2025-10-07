@@ -186,7 +186,7 @@ export default function RevenueIntelligencePage() {
           <div className="mt-12 bg-accent/10 border border-accent rounded-lg p-8 max-w-4xl mx-auto">
             <h3 className="font-bold text-xl mb-4 text-primary">Your Product, Your Revenue</h3>
             <p className="text-gray-700">
-              You own the product completely. We build it, deploy it, and ensure it's generating revenue. All future earnings belong to you.
+              You own the product completely. We build it, deploy it, and ensure it&apos;s generating revenue. All future earnings belong to you.
             </p>
           </div>
         </div>

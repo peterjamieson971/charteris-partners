@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowLeft, ArrowRight, TrendingDown, AlertCircle, DollarSign, FileText, Clock, Target } from "lucide-react";
+import { ArrowLeft, ArrowRight, TrendingDown, AlertCircle, DollarSign, FileText, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 

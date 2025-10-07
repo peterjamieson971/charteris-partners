@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowLeft, ArrowRight, TrendingUp, Database, DollarSign, Package, BarChart3, Lightbulb } from "lucide-react";
+import { ArrowLeft, ArrowRight, TrendingUp, Database, DollarSign, Package, BarChart3 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 

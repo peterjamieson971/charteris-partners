@@ -2,14 +2,12 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { X } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import {
   hasConsent,
   acceptAllCookies,
   acceptNecessaryOnly,
-  getCookiePreferences,
 } from "@/lib/cookie-consent";
 
 export function CookieConsentBanner() {

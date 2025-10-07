@@ -60,7 +60,7 @@ export default function ContactPage() {
         timeline: "",
         website: "",
       });
-    } catch (err) {
+    } catch {
       setError('Failed to send message. Please try again or email us directly.');
       setIsSubmitting(false);
     }
