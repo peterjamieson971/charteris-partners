@@ -59,7 +59,7 @@ export default function CustomerServiceCostsPage() {
                 </p>
                 <ol className="space-y-3">
                   <li><strong>Ticket volumes are at all-time highs</strong> (75% of service teams reported record volumes in 2024)</li>
-                  <li><strong>Finding and keeping agents is harder than ever</strong> (turnover rates hit 30-40%, costing £13 billion annually in the US)</li>
+                  <li><strong>Finding and keeping agents is harder than ever</strong> (turnover rates hit 30-40%, costing $13 billion annually in the US)</li>
                   <li><strong>Cases are getting more complex</strong> (66% of agents report increasing case complexity)</li>
                 </ol>
                 <p>
@@ -78,7 +78,7 @@ export default function CustomerServiceCostsPage() {
                   <div className="flex items-start gap-4">
                     <DollarSign className="h-8 w-8 text-accent flex-shrink-0 mt-1" />
                     <div>
-                      <p className="text-3xl font-bold text-primary mb-2">£2.70-£5.60</p>
+                      <p className="text-3xl font-bold text-primary mb-2">$2.70-$5.60</p>
                       <p className="text-gray-600">Average cost per call in US contact centers</p>
                     </div>
                   </div>
@@ -103,7 +103,7 @@ export default function CustomerServiceCostsPage() {
               <h2 className="text-3xl font-bold text-primary mb-6">What It Actually Costs</h2>
               <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed space-y-4 mb-8">
                 <p>
-                  Let's put real numbers on this. The average cost per call in US contact centers ranges from £2.70 to £5.60. That might not sound like much, but multiply it across thousands of tickets per month.
+                  Let's put real numbers on this. The average cost per call in US contact centers ranges from $2.70 to $5.60. That might not sound like much, but multiply it across thousands of tickets per month.
                 </p>
                 <p>
                   A mid-sized company handling 50,000 support tickets annually at £4 per ticket is spending £200,000 just on ticket resolution. And that's before you factor in:
@@ -245,7 +245,7 @@ export default function CustomerServiceCostsPage() {
 
               <div className="mt-6 p-4 bg-white rounded border-l-4 border-l-accent">
                 <p className="text-gray-700 font-medium mb-2">
-                  Real example: Unity reduced ticket volumes by 8,000, saving £1.3 million by deploying an AI agent. NIB Health Insurance saved £22 million through AI-driven digital assistants.
+                  Real example: Unity reduced ticket volumes by 8,000, saving $1.3 million by deploying an AI agent. NIB Health Insurance saved $22 million through AI-driven digital assistants.
                 </p>
                 <p className="text-gray-700">
                   These aren't theory. These are production systems handling real customer inquiries right now.
