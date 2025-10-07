@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowLeft, ArrowRight, TrendingDown, Users, AlertCircle, DollarSign } from "lucide-react";
@@ -59,7 +60,7 @@ export default function EmailProcessingProblemPage() {
                   <div className="flex items-start gap-4">
                     <DollarSign className="h-8 w-8 text-accent flex-shrink-0 mt-1" />
                     <div>
-                      <p className="text-3xl font-bold text-primary mb-2">$28,500</p>
+                      <p className="text-3xl font-bold text-primary mb-2">£28,500</p>
                       <p className="text-gray-600">Average annual cost per employee for manual data entry from emails</p>
                     </div>
                   </div>
@@ -110,7 +111,7 @@ export default function EmailProcessingProblemPage() {
                     <div className="flex items-start gap-3">
                       <AlertCircle className="h-6 w-6 text-accent flex-shrink-0 mt-1" />
                       <div>
-                        <p className="font-semibold text-primary mb-2">$220 per record</p>
+                        <p className="font-semibold text-primary mb-2">£220 per record</p>
                         <p className="text-sm text-gray-600">Average cost of manual errors</p>
                       </div>
                     </div>
