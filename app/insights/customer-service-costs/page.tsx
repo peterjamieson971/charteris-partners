@@ -6,19 +6,72 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 
 export const metadata = {
-  title: "Why Your Customer Service Costs Are About to Double | Charteris Partners",
+  title: "Why Your Customer Service Costs Are About to Double",
   description: "The customer service crisis no one's preparing for—and what smart companies are doing about it right now.",
+  alternates: {
+    canonical: "https://charterispartners.com/insights/customer-service-costs",
+  },
+  openGraph: {
+    title: "Why Your Customer Service Costs Are About to Double",
+    description: "The customer service crisis no one's preparing for—and what smart companies are doing about it right now.",
+    url: "https://charterispartners.com/insights/customer-service-costs",
+    type: "article",
+    images: [
+      {
+        url: "https://charterispartners.com/images/shutterstock_2481137361.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Customer Service AI Automation",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Why Your Customer Service Costs Are About to Double",
+    description: "The customer service crisis no one's preparing for",
+    images: ["https://charterispartners.com/images/shutterstock_2481137361.jpg"],
+  },
 };
 
 export default function CustomerServiceCostsPage() {
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Why Your Customer Service Costs Are About to Double",
+    "description": "The customer service crisis no one's preparing for—and what smart companies are doing about it right now.",
+    "image": "https://charterispartners.com/images/shutterstock_2481137361.jpg",
+    "author": {
+      "@type": "Organization",
+      "name": "Charteris Partners"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Charteris Partners",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://charterispartners.com/images/Transparent_Navy_Blue__1_.png"
+      }
+    },
+    "datePublished": "2024-10-06",
+    "dateModified": "2024-10-06",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://charterispartners.com/insights/customer-service-costs"
+    }
+  };
+
   return (
     <main className="min-h-screen bg-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
       {/* Article Header */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-blue-900 text-white py-20 overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <Image
             src="/images/shutterstock_2481137361.jpg"
-            alt="Customer Service"
+            alt="AI-powered customer service automation reducing support costs and improving response times"
             fill
             className="object-cover"
           />
@@ -106,7 +159,7 @@ export default function CustomerServiceCostsPage() {
                   Let's put real numbers on this. The average cost per call in US contact centers ranges from $2.70 to $5.60. That might not sound like much, but multiply it across thousands of tickets per month.
                 </p>
                 <p>
-                  A mid-sized company handling 50,000 support tickets annually at £4 per ticket is spending £200,000 just on ticket resolution. And that's before you factor in:
+                  A mid-sized company handling 50,000 support tickets annually at $4 per ticket is spending $200,000 just on ticket resolution. And that's before you factor in:
                 </p>
               </div>
 
@@ -172,7 +225,7 @@ export default function CustomerServiceCostsPage() {
                   But here's what changed: Employers are now receiving <strong>3.5 fewer applications per job opening</strong> than before. The talent pool shrank while your need for agents grew.
                 </p>
                 <p>
-                  And when you do find someone? It costs 30% of their annual salary just to hire and onboard them. For a £40,000/year agent, that's £12,000 in hiring costs. If they leave after a year (which 30-40% do), you're right back where you started.
+                  And when you do find someone? It costs 30% of their annual salary just to hire and onboard them. For a $50,000/year agent, that's $15,000 in hiring costs. If they leave after a year (which 30-40% do), you're right back where you started.
                 </p>
               </div>
             </div>
@@ -295,15 +348,15 @@ export default function CustomerServiceCostsPage() {
               <h2 className="text-3xl font-bold text-primary mb-6">The Math That Actually Matters</h2>
               <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed space-y-4">
                 <p>
-                  If you're handling 50,000 tickets annually at £4 per ticket, that's £200,000 in annual support costs.
+                  If you're handling 50,000 tickets annually at $4 per ticket, that's $200,000 in annual support costs.
                 </p>
                 <div className="space-y-2 text-lg">
-                  <p>Automate 60% of routine tickets = <strong>£120,000 saved</strong>.</p>
-                  <p>Speed up remaining 40% by 50% = another <strong>£40,000 saved</strong>.</p>
-                  <p>Reduce agent turnover by improving workload = <strong>£50,000+ in reduced hiring costs</strong>.</p>
+                  <p>Automate 60% of routine tickets = <strong>$120,000 saved</strong>.</p>
+                  <p>Speed up remaining 40% by 50% = another <strong>$40,000 saved</strong>.</p>
+                  <p>Reduce agent turnover by improving workload = <strong>$50,000+ in reduced hiring costs</strong>.</p>
                 </div>
                 <p className="text-xl font-semibold text-gray-900">
-                  Total impact: £200,000+ annually. Investment to build it: 30 days and a fraction of that annual savings.
+                  Total impact: $200,000+ annually. Investment to build it: 30 days and a fraction of that annual savings.
                 </p>
               </div>
             </div>

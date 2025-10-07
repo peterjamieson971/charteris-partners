@@ -6,17 +6,70 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 
 export const metadata = {
-  title: "The Predictive Maintenance Revolution Hiding in Your Data | Charteris Partners",
+  title: "The Predictive Maintenance Revolution Hiding in Your Data",
   description: "How Smart Companies Are Preventing Failures Before They Happen—and saving millions in the process.",
+  alternates: {
+    canonical: "https://charterispartners.com/insights/predictive-maintenance",
+  },
+  openGraph: {
+    title: "The Predictive Maintenance Revolution Hiding in Your Data",
+    description: "How Smart Companies Are Preventing Failures Before They Happen—and saving millions in the process.",
+    url: "https://charterispartners.com/insights/predictive-maintenance",
+    type: "article",
+    images: [
+      {
+        url: "https://charterispartners.com/images/shutterstock_2481137361.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Predictive Maintenance AI Technology",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "The Predictive Maintenance Revolution Hiding in Your Data",
+    description: "How Smart Companies Are Preventing Failures Before They Happen",
+    images: ["https://charterispartners.com/images/shutterstock_2481137361.jpg"],
+  },
 };
 
 export default function PredictiveMaintenancePage() {
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "The Predictive Maintenance Revolution Hiding in Your Data",
+    "description": "How Smart Companies Are Preventing Failures Before They Happen—and saving millions in the process.",
+    "image": "https://charterispartners.com/images/shutterstock_2481137361.jpg",
+    "author": {
+      "@type": "Organization",
+      "name": "Charteris Partners"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Charteris Partners",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://charterispartners.com/images/Transparent_Navy_Blue__1_.png"
+      }
+    },
+    "datePublished": "2024-10-06",
+    "dateModified": "2024-10-06",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://charterispartners.com/insights/predictive-maintenance"
+    }
+  };
+
   return (
     <main className="min-h-screen bg-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
       {/* Article Header */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-blue-900 text-white py-20 overflow-hidden">
         <div className="absolute inset-0 opacity-10">
-          <Image src="/images/shutterstock_2481137361.jpg" alt="Predictive Maintenance" fill className="object-cover" />
+          <Image src="/images/shutterstock_2481137361.jpg" alt="Predictive maintenance AI monitoring industrial equipment sensors and preventing failures" fill className="object-cover" />
         </div>
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="max-w-4xl mx-auto">
@@ -64,7 +117,7 @@ export default function PredictiveMaintenancePage() {
                   <div className="flex items-start gap-4">
                     <DollarSign className="h-8 w-8 text-accent flex-shrink-0 mt-1" />
                     <div>
-                      <p className="text-3xl font-bold text-primary mb-2">£125,000</p>
+                      <p className="text-3xl font-bold text-primary mb-2">$125,000</p>
                       <p className="text-gray-600">Median cost per hour of manufacturing downtime</p>
                     </div>
                   </div>
@@ -151,7 +204,7 @@ export default function PredictiveMaintenancePage() {
 
               <div className="mt-6 p-4 bg-white rounded border-l-4 border-l-accent">
                 <p className="text-gray-700 font-medium">
-                  Real example: One global manufacturer monitoring 10,000+ machines reported <strong>millions in savings with ROI in three months.</strong>
+                  Real example: One global manufacturer monitoring 10,000+ machines reported <strong>millions of dollars in savings with ROI in three months.</strong>
                 </p>
               </div>
             </div>
@@ -221,7 +274,7 @@ export default function PredictiveMaintenancePage() {
                     <p className="text-gray-700 mb-3">
                       Commercial facility with 50+ HVAC units was experiencing 2-3 emergency failures per month. Predictive system analyzed compressor performance, refrigerant pressures, and power consumption to predict failures.
                     </p>
-                    <p className="text-accent font-semibold">Result: 85% reduction in emergency service calls, £200K annual savings</p>
+                    <p className="text-accent font-semibold">Result: 85% reduction in emergency service calls, $200K annual savings</p>
                   </CardContent>
                 </Card>
               </div>
@@ -261,15 +314,15 @@ export default function PredictiveMaintenancePage() {
               <h2 className="text-3xl font-bold text-primary mb-6">The Math That Matters</h2>
               <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed space-y-4">
                 <p>
-                  Let's use a real scenario: A critical production line that generates £500K revenue per day. It experiences unplanned downtime averaging 2 days per quarter due to equipment failure. That's £4M in lost revenue annually.
+                  Let's use a real scenario: A critical production line that generates $500K revenue per day. It experiences unplanned downtime averaging 2 days per quarter due to equipment failure. That's $4M in lost revenue annually.
                 </p>
                 <div className="space-y-2 text-lg">
-                  <p>Predictive maintenance reduces unplanned downtime by 70% = <strong>£2.8M in recovered revenue</strong>.</p>
-                  <p>Maintenance costs drop 25% = <strong>£150K saved on parts and labor</strong>.</p>
-                  <p>Equipment lifespan extends 30% = <strong>Defer £500K capital replacement for 2+ years</strong>.</p>
+                  <p>Predictive maintenance reduces unplanned downtime by 70% = <strong>$2.8M in recovered revenue</strong>.</p>
+                  <p>Maintenance costs drop 25% = <strong>$150K saved on parts and labor</strong>.</p>
+                  <p>Equipment lifespan extends 30% = <strong>Defer $500K capital replacement for 2+ years</strong>.</p>
                 </div>
                 <p className="text-xl font-semibold text-gray-900">
-                  Total annual impact: £3M+. Investment: 30-day build plus ongoing monitoring costs.
+                  Total annual impact: $3M+. Investment: 30-day build plus ongoing monitoring costs.
                 </p>
               </div>
             </div>

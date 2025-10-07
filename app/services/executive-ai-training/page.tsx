@@ -54,24 +54,24 @@ export default function ExecutiveAITrainingPage() {
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
             <div className="bg-white p-6 rounded-lg border-2 border-gray-200">
-              <div className="text-accent font-bold text-sm mb-2">90 MINUTES</div>
-              <h3 className="font-bold text-xl mb-3">Board Presentation</h3>
+              <div className="text-accent font-bold text-sm mb-3">90 MINUTES</div>
+              <h3 className="font-bold text-xl mb-3 text-foreground">Board Presentation</h3>
               <p className="text-gray-600">AI literacy for board oversight and governance decisions</p>
             </div>
             <div className="bg-white p-6 rounded-lg border-2 border-gray-200">
-              <div className="text-accent font-bold text-sm mb-2">1 DAY</div>
-              <h3 className="font-bold text-xl mb-3">Executive Intensive</h3>
+              <div className="text-accent font-bold text-sm mb-3">1 DAY</div>
+              <h3 className="font-bold text-xl mb-3 text-foreground">Executive Intensive</h3>
               <p className="text-gray-600">Deep dive for C-suite with hands-on demonstrations</p>
             </div>
-            <div className="bg-white p-6 rounded-lg border-2 border-accent bg-accent/5">
-              <div className="text-accent font-bold text-sm mb-2">4 SESSIONS</div>
-              <h3 className="font-bold text-xl mb-3">Leadership Series</h3>
+            <div className="bg-white p-6 rounded-lg border-2 border-accent relative">
+              <div className="text-accent font-bold text-sm mb-1">4 SESSIONS</div>
+              <div className="text-xs text-accent font-semibold mb-3">MOST POPULAR</div>
+              <h3 className="font-bold text-xl mb-3 text-foreground">Leadership Series</h3>
               <p className="text-gray-600">Comprehensive program with homework and projects</p>
-              <div className="mt-3 text-xs text-accent font-semibold">MOST POPULAR</div>
             </div>
             <div className="bg-white p-6 rounded-lg border-2 border-gray-200">
-              <div className="text-accent font-bold text-sm mb-2">2 DAYS</div>
-              <h3 className="font-bold text-xl mb-3">Strategy Retreat</h3>
+              <div className="text-accent font-bold text-sm mb-3">2 DAYS</div>
+              <h3 className="font-bold text-xl mb-3 text-foreground">Strategy Retreat</h3>
               <p className="text-gray-600">Full team alignment and AI roadmap planning</p>
             </div>
           </div>

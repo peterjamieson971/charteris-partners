@@ -41,8 +41,11 @@ const articles = [
 ];
 
 export const metadata = {
-  title: "AI Insights | Real-World Business Use Cases | Charteris Partners",
+  title: "AI Insights | Real-World Business Use Cases",
   description: "Practical insights on AI implementation, ROI-focused case studies, and real-world business applications from our Business Technologists.",
+  alternates: {
+    canonical: "https://charterispartners.com/insights",
+  },
 };
 
 export default function InsightsPage() {

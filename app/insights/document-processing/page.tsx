@@ -6,17 +6,70 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 
 export const metadata = {
-  title: "The Document Processing Disaster Costing You Millions | Charteris Partners",
+  title: "The Document Processing Disaster Costing You Millions",
   description: "Why Knowledge Workers Spend 60% of Their Time on Data Entry—and the 30-day fix that actually works.",
+  alternates: {
+    canonical: "https://charterispartners.com/insights/document-processing",
+  },
+  openGraph: {
+    title: "The Document Processing Disaster Costing You Millions",
+    description: "Why Knowledge Workers Spend 60% of Their Time on Data Entry—and the 30-day fix that actually works.",
+    url: "https://charterispartners.com/insights/document-processing",
+    type: "article",
+    images: [
+      {
+        url: "https://charterispartners.com/images/shutterstock_2481137361.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Document Processing Automation AI",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "The Document Processing Disaster Costing You Millions",
+    description: "Why Knowledge Workers Spend 60% of Their Time on Data Entry",
+    images: ["https://charterispartners.com/images/shutterstock_2481137361.jpg"],
+  },
 };
 
 export default function DocumentProcessingPage() {
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "The Document Processing Disaster Costing You Millions",
+    "description": "Why Knowledge Workers Spend 60% of Their Time on Data Entry—and the 30-day fix that actually works.",
+    "image": "https://charterispartners.com/images/shutterstock_2481137361.jpg",
+    "author": {
+      "@type": "Organization",
+      "name": "Charteris Partners"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Charteris Partners",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://charterispartners.com/images/Transparent_Navy_Blue__1_.png"
+      }
+    },
+    "datePublished": "2024-10-06",
+    "dateModified": "2024-10-06",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://charterispartners.com/insights/document-processing"
+    }
+  };
+
   return (
     <main className="min-h-screen bg-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
       {/* Article Header */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-blue-900 text-white py-20 overflow-hidden">
         <div className="absolute inset-0 opacity-10">
-          <Image src="/images/shutterstock_2481137361.jpg" alt="Document Processing" fill className="object-cover" />
+          <Image src="/images/shutterstock_2481137361.jpg" alt="Intelligent document processing system using OCR and AI to automate data entry" fill className="object-cover" />
         </div>
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="max-w-4xl mx-auto">

@@ -45,6 +45,7 @@ export function CookieConsentBanner() {
                   We use necessary cookies to make our site work. We&apos;d also like to set optional cookies to help us improve our website.
                   These cookies won&apos;t be set unless you choose to enable them.{" "}
                   <button
+                    type="button"
                     onClick={() => setShowDetails(true)}
                     className="text-accent hover:underline font-medium"
                   >

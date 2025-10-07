@@ -87,7 +87,7 @@ export default function TeamEnablementPage() {
             Intensive, hands-on program that transforms your existing team into AI builders
           </p>
           <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-            <div className="bg-gradient-to-br from-primary to-blue-900 text-white p-8 rounded-lg">
+            <div className="bg-primary text-white p-8 rounded-lg border border-primary/20">
               <h3 className="text-2xl font-bold mb-4">Learn by Doing</h3>
               <p className="text-gray-200 mb-4">
                 Build real solutions for your actual use cases, not theoretical exercises.
@@ -107,7 +107,7 @@ export default function TeamEnablementPage() {
                 </li>
               </ul>
             </div>
-            <div className="bg-gradient-to-br from-accent to-green-700 text-white p-8 rounded-lg">
+            <div className="bg-accent text-white p-8 rounded-lg border border-accent/20">
               <h3 className="text-2xl font-bold mb-4">Supported Independence</h3>
               <p className="text-gray-200 mb-4">
                 We guide, you build, you own. Path to complete self-sufficiency.
@@ -127,7 +127,7 @@ export default function TeamEnablementPage() {
                 </li>
               </ul>
             </div>
-            <div className="bg-gradient-to-br from-blue-600 to-blue-800 text-white p-8 rounded-lg">
+            <div className="bg-secondary text-white p-8 rounded-lg border border-secondary/20">
               <h3 className="text-2xl font-bold mb-4">Custom AI Tools</h3>
               <p className="text-gray-200 mb-4">
                 AI tools designed for your specific needs and workflows.
@@ -147,7 +147,7 @@ export default function TeamEnablementPage() {
                 </li>
               </ul>
             </div>
-            <div className="bg-gradient-to-br from-green-600 to-green-800 text-white p-8 rounded-lg">
+            <div className="bg-primary text-white p-8 rounded-lg border border-primary/20">
               <h3 className="text-2xl font-bold mb-4">Ongoing Mentorship</h3>
               <p className="text-gray-200 mb-4">
                 6 months of support as you scale your AI capabilities.

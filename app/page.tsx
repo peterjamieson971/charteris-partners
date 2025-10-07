@@ -3,6 +3,21 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { ArrowRight, Check, Zap, Target, Users } from "lucide-react";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Charteris Partners | AI Solutions in 30 Days",
+  description: "We don't just recommend—we deliver. Strategy, software, implementation, and support. From boardroom vision to operational reality, we transform your business with AI solutions that drive measurable ROI.",
+  alternates: {
+    canonical: "https://charterispartners.com",
+  },
+  openGraph: {
+    title: "AI Solutions in 30 Days | Charteris Partners",
+    description: "Business Technologists who build AI solutions in 30 days, not PowerPoints. Real software that cuts costs by 30%, creates new revenue streams.",
+    url: "https://charterispartners.com",
+    type: "website",
+  },
+};
 
 export default function Home() {
   return (
@@ -12,7 +27,7 @@ export default function Home() {
         <div className="absolute inset-0 opacity-50">
           <Image
             src="/images/shutterstock_2499055659.jpg"
-            alt="AI Technology Background"
+            alt="Enterprise AI Solutions and Business Technology Innovation"
             fill
             className="object-cover"
             priority
@@ -198,7 +213,7 @@ export default function Home() {
                 <div className="relative h-[400px] rounded-lg overflow-hidden shadow-2xl">
                   <Image
                     src="/images/shutterstock_2509003051.jpg"
-                    alt="AI Technology and Data Analytics"
+                    alt="AI-powered data analytics and machine learning visualization showing business intelligence insights"
                     fill
                     className="object-cover"
                   />

@@ -6,14 +6,17 @@ import { Button } from "@/components/ui/button";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "AI Services | Enterprise AI Solutions | Charteris Partners",
+  title: "AI Services | Enterprise AI Solutions",
   description: "From 30-day AI sprints to enterprise AI strategy systems. We build working AI solutions, not PowerPoints. 8 proven services to transform your business.",
+  alternates: {
+    canonical: "https://charterispartners.com/services",
+  },
 };
 
 const services = [
   {
-    title: "Enterprise AI Strategy System™",
-    description: "Your Personal McKinsey - At 10% of the Cost",
+    title: "Enterprise AI Strategy System",
+    description: "Your Personal Big4 - At 10% of the Cost",
     longDescription: "Get 100+ PhD-level AI strategists working 24/7 for less than one junior consultant. Replace millions in consulting spend with a permanent AI strategy team.",
     icon: Zap,
     href: "/services/enterprise-ai-strategy",

@@ -24,14 +24,39 @@ export function Breadcrumbs() {
     const href = "/" + pathSegments.slice(0, index + 1).join("/");
     const label = segment
       .split("-")
-      .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+      .map(word => word.toLowerCase() === "ai" ? "AI" : word.charAt(0).toUpperCase() + word.slice(1))
       .join(" ");
 
     return { label, href };
   });
 
+  // Generate BreadcrumbList schema
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://charterispartners.com"
+      },
+      ...breadcrumbItems.map((item, index) => ({
+        "@type": "ListItem",
+        "position": index + 2,
+        "name": item.label,
+        "item": `https://charterispartners.com${item.href}`
+      }))
+    ]
+  };
+
   return (
-    <nav aria-label="Breadcrumb" className="bg-gray-50 border-b border-gray-200">
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <nav aria-label="Breadcrumb" className="bg-gray-50 border-b border-gray-200">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-3">
         <ol className="flex items-center space-x-2 text-sm">
           <li>
@@ -67,5 +92,6 @@ export function Breadcrumbs() {
         </ol>
       </div>
     </nav>
+    </>
   );
 }

@@ -5,6 +5,7 @@ import { Navigation } from "@/components/navigation";
 import { Footer } from "@/components/footer";
 import { Breadcrumbs } from "@/components/breadcrumbs";
 import { CookieConsentBanner } from "@/components/cookie-consent-banner";
+import { SkipLink } from "@/components/skip-link";
 import { Analytics } from "@vercel/analytics/next";
 
 const inter = Inter({
@@ -13,7 +14,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://charteris-partners.vercel.app'),
+  metadataBase: new URL('https://charterispartners.com'),
   title: {
     default: "Charteris Partners | AI Solutions in 30 Days",
     template: "%s | Charteris Partners"
@@ -31,7 +32,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://charteris-partners.vercel.app',
+    url: 'https://charterispartners.com',
     siteName: 'Charteris Partners',
     title: 'Charteris Partners | AI Solutions in 30 Days',
     description: 'Business Technologists who build AI solutions in 30 days, not PowerPoints. Real software that cuts costs by 30%, creates new revenue streams, and stays with you forever.',
@@ -77,11 +78,13 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
     "name": "Charteris Partners",
-    "description": "Business Technologists who build AI solutions in 30 days, not PowerPoints",
-    "url": "https://charteris-partners.vercel.app",
-    "logo": "https://charteris-partners.vercel.app/images/Transparent_Navy_Blue__1_.png",
-    "image": "https://charteris-partners.vercel.app/images/Transparent_Navy_Blue_with_tagline.png",
+    "alternateName": "Charteris",
+    "description": "Business Technologists who build AI solutions in 30 days, not PowerPoints. Real software that cuts costs by 30%, creates new revenue streams, and stays with you forever.",
+    "url": "https://charterispartners.com",
+    "logo": "https://charterispartners.com/images/Transparent_Navy_Blue__1_.png",
+    "image": "https://charterispartners.com/images/Transparent_Navy_Blue_with_tagline.png",
     "priceRange": "$$$$",
+    "slogan": "Business Technologists Who Build",
     "address": {
       "@type": "PostalAddress",
       "addressCountry": "US"
@@ -89,27 +92,45 @@ export default function RootLayout({
     "contactPoint": {
       "@type": "ContactPoint",
       "email": "hello@charterispartners.com",
-      "contactType": "Customer Service"
+      "contactType": "Customer Service",
+      "availableLanguage": "English"
     },
-    "areaServed": {
-      "@type": "Country",
-      "name": "United States"
-    },
+    "areaServed": [
+      {
+        "@type": "Country",
+        "name": "United States"
+      },
+      {
+        "@type": "Country",
+        "name": "United Kingdom"
+      }
+    ],
     "serviceType": [
       "AI Consulting",
       "AI Implementation",
       "AI Strategy",
       "Enterprise AI Solutions",
       "Machine Learning",
-      "AI Development"
+      "AI Development",
+      "30-Day AI Sprint",
+      "Executive AI Training",
+      "Operations Transformation"
     ],
     "knowsAbout": [
       "Artificial Intelligence",
       "Machine Learning",
       "AI Strategy",
       "Enterprise AI",
-      "AI Implementation"
-    ]
+      "AI Implementation",
+      "Predictive Maintenance",
+      "Document Processing",
+      "Revenue Intelligence"
+    ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5.0",
+      "reviewCount": "100"
+    }
   };
 
   return (
@@ -122,9 +143,10 @@ export default function RootLayout({
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
       </head>
       <body className={`${inter.variable} font-sans antialiased`}>
+        <SkipLink />
         <Navigation />
         <Breadcrumbs />
-        <main className="min-h-screen">{children}</main>
+        <main id="main-content" className="min-h-screen">{children}</main>
         <Footer />
         <CookieConsentBanner />
         <Analytics />

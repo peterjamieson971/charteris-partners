@@ -84,7 +84,7 @@ export default function OperationsTransformationPage() {
             Our Comprehensive Solution
           </h2>
           <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-            <div className="bg-gradient-to-br from-primary to-blue-900 text-white p-8 rounded-lg">
+            <div className="bg-primary text-white p-8 rounded-lg border border-primary/20">
               <h3 className="text-2xl font-bold mb-4">Intelligent Document Processing</h3>
               <p className="text-gray-200 mb-4">
                 Automate data extraction, validation, and routing from any document type.
@@ -104,7 +104,7 @@ export default function OperationsTransformationPage() {
                 </li>
               </ul>
             </div>
-            <div className="bg-gradient-to-br from-accent to-green-700 text-white p-8 rounded-lg">
+            <div className="bg-accent text-white p-8 rounded-lg border border-accent/20">
               <h3 className="text-2xl font-bold mb-4">Customer Service Automation</h3>
               <p className="text-gray-200 mb-4">
                 AI handling 70% of queries with better satisfaction scores.
@@ -124,7 +124,7 @@ export default function OperationsTransformationPage() {
                 </li>
               </ul>
             </div>
-            <div className="bg-gradient-to-br from-blue-600 to-blue-800 text-white p-8 rounded-lg">
+            <div className="bg-secondary text-white p-8 rounded-lg border border-secondary/20">
               <h3 className="text-2xl font-bold mb-4">Workflow Optimization</h3>
               <p className="text-gray-200 mb-4">
                 Smart routing, automated approvals, exception handling.
@@ -144,7 +144,7 @@ export default function OperationsTransformationPage() {
                 </li>
               </ul>
             </div>
-            <div className="bg-gradient-to-br from-green-600 to-green-800 text-white p-8 rounded-lg">
+            <div className="bg-primary text-white p-8 rounded-lg border border-primary/20">
               <h3 className="text-2xl font-bold mb-4">Predictive Operations</h3>
               <p className="text-gray-200 mb-4">
                 Anticipate issues before they occur, optimize resource allocation.

@@ -149,7 +149,7 @@ export default function ContactPage() {
             {/* Contact Form */}
             <div className="md:col-span-3">
               {submitted ? (
-                <Card className="bg-accent/10 border-accent">
+                <Card className="bg-accent/10 border-accent" role="alert" aria-live="polite">
                   <CardHeader>
                     <CardTitle className="text-accent">Thank You!</CardTitle>
                     <CardDescription className="text-foreground">
@@ -172,7 +172,11 @@ export default function ContactPage() {
                   </CardHeader>
                   <CardContent>
                     {error && (
-                      <div className="mb-4 p-4 bg-red-50 border border-red-200 rounded-lg text-red-800 text-sm">
+                      <div
+                        role="alert"
+                        aria-live="polite"
+                        className="mb-4 p-4 bg-red-50 border border-red-200 rounded-lg text-red-800 text-sm"
+                      >
                         {error}
                       </div>
                     )}
@@ -186,6 +190,7 @@ export default function ContactPage() {
                         style={{ position: 'absolute', left: '-9999px' }}
                         tabIndex={-1}
                         autoComplete="off"
+                        aria-hidden="true"
                       />
                       <div className="grid md:grid-cols-2 gap-4">
                         <div className="space-y-2">

@@ -6,8 +6,11 @@ import Image from "next/image";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About Us | Business Technologists Who Build | Charteris Partners",
+  title: "About Us | Business Technologists Who Build",
   description: "We're not consultants. We're Business Technologists who understand spreadsheets AND codebases, boardroom AND server room. 15+ years building AI systems.",
+  alternates: {
+    canonical: "https://charterispartners.com/about",
+  },
 };
 
 export default function AboutPage() {

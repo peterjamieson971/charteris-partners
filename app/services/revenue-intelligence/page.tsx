@@ -23,7 +23,7 @@ export default function RevenueIntelligencePage() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="max-w-4xl">
             <div className="inline-block bg-accent/20 text-accent px-4 py-2 rounded-full text-sm font-semibold mb-6">
-              Revenue Share Model
+              New Revenue Streams
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
               Revenue Intelligence Platform
@@ -84,25 +84,25 @@ export default function RevenueIntelligencePage() {
             Transform Data Into Revenue-Generating Products
           </h2>
           <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-            <div className="bg-gradient-to-br from-primary to-blue-900 text-white p-8 rounded-lg">
+            <div className="bg-primary text-white p-8 rounded-lg border border-primary/20">
               <h3 className="text-2xl font-bold mb-4">Customer Intelligence Products</h3>
               <p className="text-gray-200">
                 Dashboards, predictions, and insights your customers will pay for.
               </p>
             </div>
-            <div className="bg-gradient-to-br from-accent to-green-700 text-white p-8 rounded-lg">
+            <div className="bg-accent text-white p-8 rounded-lg border border-accent/20">
               <h3 className="text-2xl font-bold mb-4">API Monetization</h3>
               <p className="text-gray-200">
                 Package your data and models as revenue-generating APIs.
               </p>
             </div>
-            <div className="bg-gradient-to-br from-blue-600 to-blue-800 text-white p-8 rounded-lg">
+            <div className="bg-secondary text-white p-8 rounded-lg border border-secondary/20">
               <h3 className="text-2xl font-bold mb-4">Embedded AI Features</h3>
               <p className="text-gray-200">
                 Premium AI capabilities within existing products.
               </p>
             </div>
-            <div className="bg-gradient-to-br from-green-600 to-green-800 text-white p-8 rounded-lg">
+            <div className="bg-primary text-white p-8 rounded-lg border border-primary/20">
               <h3 className="text-2xl font-bold mb-4">White-label Solutions</h3>
               <p className="text-gray-200">
                 Your expertise packaged for your industry.
@@ -184,9 +184,9 @@ export default function RevenueIntelligencePage() {
             </div>
           </div>
           <div className="mt-12 bg-accent/10 border border-accent rounded-lg p-8 max-w-4xl mx-auto">
-            <h3 className="font-bold text-xl mb-4 text-primary">Revenue Share Model</h3>
+            <h3 className="font-bold text-xl mb-4 text-primary">Your Product, Your Revenue</h3>
             <p className="text-gray-700">
-              We succeed when you succeed. Our compensation is directly tied to the revenue your new product generates.
+              You own the product completely. We build it, deploy it, and ensure it's generating revenue. All future earnings belong to you.
             </p>
           </div>
         </div>

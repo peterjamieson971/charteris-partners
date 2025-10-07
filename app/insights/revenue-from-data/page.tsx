@@ -6,17 +6,70 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 
 export const metadata = {
-  title: "Revenue Hiding in Your Database | Charteris Partners",
+  title: "Revenue Hiding in Your Database",
   description: "How Companies Are Creating New Revenue Streams From Existing Data—without selling customer information.",
+  alternates: {
+    canonical: "https://charterispartners.com/insights/revenue-from-data",
+  },
+  openGraph: {
+    title: "Revenue Hiding in Your Database",
+    description: "How Companies Are Creating New Revenue Streams From Existing Data—without selling customer information.",
+    url: "https://charterispartners.com/insights/revenue-from-data",
+    type: "article",
+    images: [
+      {
+        url: "https://charterispartners.com/images/shutterstock_2481137361.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Data Monetization and Revenue Intelligence",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Revenue Hiding in Your Database",
+    description: "How Companies Are Creating New Revenue Streams From Existing Data",
+    images: ["https://charterispartners.com/images/shutterstock_2481137361.jpg"],
+  },
 };
 
 export default function RevenueFromDataPage() {
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Revenue Hiding in Your Database",
+    "description": "How Companies Are Creating New Revenue Streams From Existing Data—without selling customer information.",
+    "image": "https://charterispartners.com/images/shutterstock_2481137361.jpg",
+    "author": {
+      "@type": "Organization",
+      "name": "Charteris Partners"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Charteris Partners",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://charterispartners.com/images/Transparent_Navy_Blue__1_.png"
+      }
+    },
+    "datePublished": "2024-10-06",
+    "dateModified": "2024-10-06",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://charterispartners.com/insights/revenue-from-data"
+    }
+  };
+
   return (
     <main className="min-h-screen bg-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
       {/* Article Header */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-blue-900 text-white py-20 overflow-hidden">
         <div className="absolute inset-0 opacity-10">
-          <Image src="/images/shutterstock_2481137361.jpg" alt="Data Revenue" fill className="object-cover" />
+          <Image src="/images/shutterstock_2481137361.jpg" alt="Data monetization strategy showing revenue intelligence and business analytics insights" fill className="object-cover" />
         </div>
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="max-w-4xl mx-auto">

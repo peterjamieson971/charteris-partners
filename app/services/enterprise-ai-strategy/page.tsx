@@ -3,7 +3,7 @@ import Image from "next/image";
 import { Check, X, ArrowRight } from "lucide-react";
 
 export const metadata = {
-  title: "Enterprise AI Strategy System™ | Your Personal McKinsey | Charteris Partners",
+  title: "Enterprise AI Strategy System | Your Personal Big4 | Charteris Partners",
   description: "Get 100+ PhD-level AI strategists working 24/7 for less than one junior consultant. Replace millions in consulting spend with a permanent AI strategy team.",
 };
 
@@ -26,10 +26,10 @@ export default function EnterpriseAIStrategyPage() {
               Most Cost-Effective Service
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-              Enterprise AI Strategy System™
+              Enterprise AI Strategy System
             </h1>
             <p className="text-xl md:text-2xl mb-6 text-gray-200">
-              Your Personal McKinsey - At 10% of the Cost
+              Your Personal Big4 - At 10% of the Cost
             </p>
             <p className="text-lg md:text-xl mb-8 text-gray-300">
               Get 100+ PhD-level AI strategists working 24/7 for less than one junior consultant. Replace millions in consulting spend with a permanent AI strategy team.
@@ -105,31 +105,31 @@ export default function EnterpriseAIStrategyPage() {
       <section className="py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6 text-center">
-            Our Enterprise AI Strategy System™
+            Our Enterprise AI Strategy System
           </h2>
           <p className="text-xl text-gray-600 text-center mb-12 max-w-3xl mx-auto">
             We build a complete AI strategy team that becomes a permanent part of your organization
           </p>
           <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-            <div className="bg-gradient-to-br from-primary to-blue-900 text-white p-8 rounded-lg">
+            <div className="bg-primary text-white p-8 rounded-lg border border-primary/20">
               <h3 className="text-2xl font-bold mb-4">100+ Specialized AI Analysts</h3>
               <p className="text-gray-200">
                 Each trained on specific domains from financial modeling to competitive intelligence. Available 24/7, analyzing your business in real-time.
               </p>
             </div>
-            <div className="bg-gradient-to-br from-accent to-green-700 text-white p-8 rounded-lg">
+            <div className="bg-accent text-white p-8 rounded-lg border border-accent/20">
               <h3 className="text-2xl font-bold mb-4">Automated Consulting Frameworks</h3>
               <p className="text-gray-200">
                 Porter&apos;s Five Forces, BCG Matrix, McKinsey 7S - all analyzing your business continuously, not just quarterly.
               </p>
             </div>
-            <div className="bg-gradient-to-br from-blue-600 to-blue-800 text-white p-8 rounded-lg">
+            <div className="bg-secondary text-white p-8 rounded-lg border border-secondary/20">
               <h3 className="text-2xl font-bold mb-4">Living Intelligence System</h3>
               <p className="text-gray-200">
                 Daily strategic alerts, automatic opportunity identification, competitive move tracking - strategy that adapts as your market moves.
               </p>
             </div>
-            <div className="bg-gradient-to-br from-green-600 to-green-800 text-white p-8 rounded-lg">
+            <div className="bg-primary text-white p-8 rounded-lg border border-primary/20">
               <h3 className="text-2xl font-bold mb-4">Execution Tracking</h3>
               <p className="text-gray-200">
                 Ensures strategy becomes reality with automated project tracking and daily action items. No more strategy documents gathering dust.
