@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { ArrowRight, Check, Zap, Target, Users } from "lucide-react";
+import { ArrowRight, Check, Zap, Target, Users, X } from "lucide-react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -94,35 +94,48 @@ export default function Home() {
             <div className="mt-12 grid md:grid-cols-2 gap-6">
               <Card className="border-l-4 border-l-destructive">
                 <CardHeader>
-                  <CardTitle className="text-primary text-xl">Meanwhile:</CardTitle>
+                  <CardTitle className="text-primary text-xl">You&apos;re Facing:</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div className="flex items-start gap-3">
-                    <span className="text-primary font-bold text-lg">•</span>
+                    <X className="h-5 w-5 text-destructive mt-0.5 flex-shrink-0" />
                     <span className="text-foreground">Your costs keep rising while margins shrink</span>
                   </div>
                   <div className="flex items-start gap-3">
-                    <span className="text-primary font-bold text-lg">•</span>
+                    <X className="h-5 w-5 text-destructive mt-0.5 flex-shrink-0" />
                     <span className="text-foreground">Competitors move faster with AI-powered operations</span>
                   </div>
                   <div className="flex items-start gap-3">
-                    <span className="text-primary font-bold text-lg">•</span>
+                    <X className="h-5 w-5 text-destructive mt-0.5 flex-shrink-0" />
                     <span className="text-foreground">Your team drowns in work machines should do</span>
                   </div>
                   <div className="flex items-start gap-3">
-                    <span className="text-primary font-bold text-lg">•</span>
+                    <X className="h-5 w-5 text-destructive mt-0.5 flex-shrink-0" />
                     <span className="text-foreground">That expensive AI pilot is still just a pilot</span>
                   </div>
                 </CardContent>
               </Card>
               <Card className="bg-accent/10 border-l-4 border-l-accent">
                 <CardHeader>
-                  <CardTitle className="text-xl">We Build AI That Works. In 30 Days.</CardTitle>
+                  <CardTitle className="text-xl">What You Need:</CardTitle>
                 </CardHeader>
-                <CardContent>
-                  <p className="text-gray-700">
-                    No discovery phases. No transformation theatre. Just builders who deliver working solutions you own completely.
-                  </p>
+                <CardContent className="space-y-4">
+                  <div className="flex items-start gap-3">
+                    <Check className="h-5 w-5 text-accent mt-0.5 flex-shrink-0" />
+                    <span className="text-foreground">AI solutions that work in 30 days</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <Check className="h-5 w-5 text-accent mt-0.5 flex-shrink-0" />
+                    <span className="text-foreground">No discovery phases or transformation theatre</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <Check className="h-5 w-5 text-accent mt-0.5 flex-shrink-0" />
+                    <span className="text-foreground">Working solutions you own completely</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <Check className="h-5 w-5 text-accent mt-0.5 flex-shrink-0" />
+                    <span className="text-foreground">Builders focused on outcomes, not billable hours</span>
+                  </div>
                 </CardContent>
               </Card>
             </div>
@@ -233,7 +246,7 @@ export default function Home() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
             <Card className="hover:shadow-lg transition-shadow h-full flex flex-col">
               <CardHeader className="flex-1">
-                <CardTitle className="text-lg mb-3">Enterprise AI Strategy System™</CardTitle>
+                <CardTitle className="text-lg mb-3">Enterprise AI Strategy System</CardTitle>
                 <CardDescription className="text-sm">
                   Replace millions in consulting spend with 100+ AI strategists working 24/7
                 </CardDescription>
