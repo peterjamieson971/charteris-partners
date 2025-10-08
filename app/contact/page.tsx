@@ -13,7 +13,9 @@ export default function ContactPage() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
+    phone: "",
     company: "",
+    location: "",
     role: "",
     challenge: "",
     timeline: "",
@@ -54,7 +56,9 @@ export default function ContactPage() {
       setFormData({
         name: "",
         email: "",
+        phone: "",
         company: "",
+        location: "",
         role: "",
         challenge: "",
         timeline: "",
@@ -214,6 +218,32 @@ export default function ContactPage() {
                             value={formData.email}
                             onChange={handleChange}
                             placeholder="john@company.com"
+                          />
+                        </div>
+                      </div>
+
+                      <div className="grid md:grid-cols-2 gap-4">
+                        <div className="space-y-2">
+                          <Label htmlFor="phone">Telephone Number *</Label>
+                          <Input
+                            id="phone"
+                            name="phone"
+                            type="tel"
+                            required
+                            value={formData.phone}
+                            onChange={handleChange}
+                            placeholder="012 345 6789"
+                          />
+                        </div>
+                        <div className="space-y-2">
+                          <Label htmlFor="location">Location *</Label>
+                          <Input
+                            id="location"
+                            name="location"
+                            required
+                            value={formData.location}
+                            onChange={handleChange}
+                            placeholder="Location"
                           />
                         </div>
                       </div>

@@ -76,10 +76,10 @@ export async function POST(request: NextRequest) {
     }
 
     // Extract and validate required fields
-    const { name, email, company, role, challenge, timeline } = body;
+    const { name, email, phone, company, location, role, challenge, timeline } = body;
 
     // Validation
-    if (!name || !email || !company || !role || !challenge) {
+    if (!name || !email || !phone || !company || !location || !role || !challenge) {
       return NextResponse.json(
         { error: 'All required fields must be filled' },
         { status: 400 }
@@ -98,14 +98,16 @@ export async function POST(request: NextRequest) {
     const sanitizedData = {
       name: sanitizeInput(name),
       email: sanitizeInput(email),
+      phone: sanitizeInput(phone),
       company: sanitizeInput(company),
+      location: sanitizeInput(location),
       role: sanitizeInput(role),
       challenge: sanitizeInput(challenge),
       timeline: timeline ? sanitizeInput(timeline) : 'Not specified',
     };
 
     // Spam detection
-    const combinedText = `${sanitizedData.name} ${sanitizedData.company} ${sanitizedData.role} ${sanitizedData.challenge}`;
+    const combinedText = `${sanitizedData.name} ${sanitizedData.company} ${sanitizedData.location} ${sanitizedData.role} ${sanitizedData.challenge}`;
     if (detectSpam(combinedText)) {
       // Silent fail for spam
       return NextResponse.json({ success: true });
@@ -120,7 +122,9 @@ export async function POST(request: NextRequest) {
         <h2>New Contact Form Submission</h2>
         <p><strong>Name:</strong> ${sanitizedData.name}</p>
         <p><strong>Email:</strong> ${sanitizedData.email}</p>
+        <p><strong>Phone:</strong> ${sanitizedData.phone}</p>
         <p><strong>Company:</strong> ${sanitizedData.company}</p>
+        <p><strong>Location:</strong> ${sanitizedData.location}</p>
         <p><strong>Role:</strong> ${sanitizedData.role}</p>
         <p><strong>Timeline:</strong> ${sanitizedData.timeline}</p>
         <h3>Challenge/Message:</h3>
@@ -134,7 +138,9 @@ New Contact Form Submission
 
 Name: ${sanitizedData.name}
 Email: ${sanitizedData.email}
+Phone: ${sanitizedData.phone}
 Company: ${sanitizedData.company}
+Location: ${sanitizedData.location}
 Role: ${sanitizedData.role}
 Timeline: ${sanitizedData.timeline}
 

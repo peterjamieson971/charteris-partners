@@ -59,8 +59,7 @@ export function Footer() {
           </div>
 
           <div>
-            <h3 className="font-semibold sr-only md:not-sr-only md:mb-4">Services</h3>
-            <ul className="space-y-2">
+            <ul className="space-y-2 md:mt-10">
               {services.slice(4).map((service) => (
                 <li key={service.href}>
                   <Link

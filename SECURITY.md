@@ -47,23 +47,31 @@ Contact form (`/app/api/contact/route.ts`) includes:
 
 ## 🚨 Critical Security Reminders
 
-### **IMMEDIATE ACTION REQUIRED:**
+### **Environment Variables Configuration:**
 
-1. **Rotate API Keys** - The Resend API key in `.env.local` should be rotated if this file was ever committed to git or shared
+1. **Production (Vercel)**
+   - ✅ API keys are stored in Vercel environment variables (encrypted)
+   - ✅ No `.env.local` file in repository
+   - Set these environment variables in Vercel dashboard:
+     ```
+     RESEND_API_KEY=your_production_api_key_here
+     ```
+   - See [DEPLOYMENT.md](DEPLOYMENT.md) for detailed setup instructions
+
+2. **Local Development**
+   - Create `.env.local` from `.env.example`
+   - Use a **different** API key than production
+   - File is gitignored and never committed
+
+3. **Security Checks**
    ```bash
-   # Check if .env.local was ever committed:
+   # Verify .env.local is gitignored
+   git check-ignore .env.local
+   # Should output: .env.local
+
+   # Verify no env files in git history
    git log --all --full-history -- .env.local
-   ```
-
-2. **Production Environment Variables**
-   - **NEVER** commit `.env.local` to git
-   - Set environment variables in your hosting platform (Vercel, etc.)
-   - Use different API keys for development and production
-
-3. **Vercel Deployment**
-   Set these environment variables in Vercel dashboard:
-   ```
-   RESEND_API_KEY=your_production_api_key_here
+   # Should output: (empty)
    ```
 
 ## 🛡️ Security Best Practices for Maintenance
